@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header #bottom-header .container .bottom-header .header-btn {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: #009DFF;
+  color: white;
+}
+
+header .top-header {
+  background-color: #F5FBFF;
+  padding: 10px;
+}
+header .top-header .container .row .header-contact {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+header .top-header .container .row .header-contact a {
+  text-decoration: none;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+header .top-header .container .row .header-contact i {
+  font-size: 13px;
+}
+header #bottom-header .container .bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header #bottom-header .container .bottom-header .header-nav .header-ul {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+header #bottom-header .container .bottom-header .header-nav .header-ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+}
+header #bottom-header .container .bottom-header .header-nav .header-ul li a:hover {
+  color: black;
+}
+header #bottom-header .container .bottom-header .header-btn {
+  padding: 10px 30px;
+}/*# sourceMappingURL=main.css.map */
