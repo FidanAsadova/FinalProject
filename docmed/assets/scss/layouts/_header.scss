@@ -30,6 +30,9 @@ header {
         align-items: center;
         padding: 20px 0;
         .header-nav {
+          @media only screen and (max-width: 991px) {
+            display: none;
+          }
           .header-ul {
             display: flex;
             gap: 25px;
@@ -39,8 +42,8 @@ header {
                 text-decoration: none;
                 color: gray;
                 font-weight: 500;
-                &:hover{
-                    color: black;
+                &:hover {
+                  color: black;
                 }
               }
             }

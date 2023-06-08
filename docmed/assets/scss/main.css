@@ -39,6 +39,11 @@ header #bottom-header .container .bottom-header {
   align-items: center;
   padding: 20px 0;
 }
+@media only screen and (max-width: 991px) {
+  header #bottom-header .container .bottom-header .header-nav {
+    display: none;
+  }
+}
 header #bottom-header .container .bottom-header .header-nav .header-ul {
   display: flex;
   gap: 25px;
@@ -54,4 +59,23 @@ header #bottom-header .container .bottom-header .header-nav .header-ul li a:hove
 }
 header #bottom-header .container .bottom-header .header-btn {
   padding: 10px 30px;
+}
+
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  text-align: start;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
+  font-size: 70px;
+  font-weight: 600;
+}
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
+  font-size: 70px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
