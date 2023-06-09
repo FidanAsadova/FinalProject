@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -87,4 +87,38 @@ header #bottom-header .container .bottom-header .header-btn {
   background-color: #fff;
   border: 1px solid #009DFF;
   color: #009DFF;
+}
+#heroBanner #hero-services {
+  background-color: #83c4ff;
+}
+#heroBanner #hero-services .container .hero-services .col {
+  padding: 40px 30px;
+}
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-head .fa-solid {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-body {
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+}
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card {
+  background-color: transparent;
+  border-color: white;
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card:hover {
+  background-color: #fff;
+  color: #5db2ff;
+}
+#heroBanner #hero-services .container .hero-services .primary-bg {
+  background-color: #5db2ff;
 }/*# sourceMappingURL=main.css.map */
