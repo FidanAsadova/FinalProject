@@ -52,6 +52,11 @@ header {
         .header-btn {
           padding: 10px 30px;
           @extend %primary-btn;
+          &:hover {
+            background-color: #fff;
+            border: 1px solid $info-color;
+            color: $info-color;
+          }
         }
       }
     }

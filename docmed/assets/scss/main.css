@@ -60,6 +60,11 @@ header #bottom-header .container .bottom-header .header-nav .header-ul li a:hove
 header #bottom-header .container .bottom-header .header-btn {
   padding: 10px 30px;
 }
+header #bottom-header .container .bottom-header .header-btn:hover {
+  background-color: #fff;
+  border: 1px solid #009DFF;
+  color: #009DFF;
+}
 
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
   display: flex;
