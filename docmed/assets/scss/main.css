@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-header #bottom-header .container .bottom-header .header-btn {
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -78,4 +78,13 @@ header #bottom-header .container .bottom-header .header-btn {
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
   font-size: 70px;
   font-weight: 300;
+}
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn {
+  padding: 15px 40px;
+  margin-top: 20px;
+}
+#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn:hover {
+  background-color: #fff;
+  border: 1px solid #009DFF;
+  color: #009DFF;
 }/*# sourceMappingURL=main.css.map */

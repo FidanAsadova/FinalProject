@@ -6,6 +6,7 @@
           .row {
             .col {
               .carousel-caption {
+                // margin: 200px 0;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -22,6 +23,16 @@
                 .p-hole {
                   font-size: 70px;
                   font-weight: 300;
+                }
+                .hero-btn {
+                  @extend %primary-btn;
+                  padding: 15px 40px;
+                  margin-top: 20px;
+                  &:hover{
+                    background-color: #fff;
+                    border: 1px solid $info-color;
+                    color: $info-color;
+                  }
                 }
               }
             }
