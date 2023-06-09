@@ -12,6 +12,7 @@
   font-size: 15px;
   background-color: #009DFF;
   color: white;
+  transition: 0.5s;
 }
 
 header .top-header {
