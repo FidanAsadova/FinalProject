@@ -92,11 +92,12 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   height: 100%;
   text-align: start;
   color: #000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
   font-size: 70px;
   font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
@@ -107,6 +108,7 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
   font-size: 70px;
   font-weight: 300;
+  font-family: "Poppins", sans-serif;
 }
 @media only screen and (max-width: 767px) {
   #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
@@ -136,12 +138,14 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-title {
   color: white;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 #heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-body {
   color: white;
   font-size: 18px;
   padding: 5px 0;
+  font-family: "Poppins", sans-serif;
 }
 #heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card {
   background-color: transparent;
@@ -312,4 +316,13 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #department .container .department .row .col .department-card .card-item a:hover {
   text-decoration: underline;
+}
+#department .container .department .row .col .department-card .img {
+  overflow: hidden;
+}
+#department .container .department .row .col .department-card .img img {
+  transition: 0.3s;
+}
+#department .container .department .row .col .department-card .img img:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

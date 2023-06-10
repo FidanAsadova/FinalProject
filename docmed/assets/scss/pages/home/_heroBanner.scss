@@ -13,11 +13,12 @@
                 height: 100%;
                 text-align: start;
                 color: #000;
-                font-family: "Roboto", sans-serif;
+                font-family: $font-roboto;
                 .p-health {
                   font-size: 70px;
                   font-weight: 600;
-                  @media only screen and (max-width: 767px){
+                  font-family: $font-roboto;
+                  @media only screen and (max-width: 767px) {
                     font-size: 55px;
                     font-weight: 600;
                   }
@@ -25,7 +26,8 @@
                 .p-hole {
                   font-size: 70px;
                   font-weight: 300;
-                  @media only screen and (max-width: 767px){
+                  font-family: $font-roboto;
+                  @media only screen and (max-width: 767px) {
                     font-size: 55px;
                     font-weight: 300;
                   }
@@ -64,12 +66,14 @@
               .card-title {
                 color: white;
                 font-size: 30px;
-                font-weight: 600;
+                font-weight: 500;
+                font-family: $font-roboto;
               }
               .card-body {
                 color: white;
                 font-size: 18px;
                 padding: 5px 0;
+                font-family: $font-roboto;
               }
             }
             .btn-card {
@@ -79,7 +83,7 @@
               padding: 10px 30px;
               margin-top: 20px;
               font-weight: 500;
-              &:hover{
+              &:hover {
                 background-color: #fff;
                 color: #5db2ff;
               }
