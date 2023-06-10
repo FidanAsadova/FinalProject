@@ -325,4 +325,47 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #department .container .department .row .col .department-card .img img:hover {
   transform: scale(1.1);
+}
+
+#feedbacks .carousel-inner {
+  position: relative;
+  z-index: 0;
+}
+#feedbacks .carousel-inner .carousel-item::before {
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+#feedbacks .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  height: 100%;
+  z-index: 3;
+}
+#feedbacks .carousel-inner .carousel-item .carousel-caption .fa-solid {
+  font-size: 60px;
+  padding-top: 100px;
+}
+#feedbacks .carousel-inner .carousel-item .carousel-caption .p-donec {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 40px 0;
+}
+#feedbacks .carousel-inner .carousel-item .carousel-caption .p-asana {
+  position: relative;
+}
+#feedbacks .carousel-inner .carousel-item .carousel-caption .p-asana::before {
+  position: absolute;
+  background: #fff;
+  width: 60px;
+  height: 2px;
+  content: "";
+  left: 47%;
+  top: -10px;
 }/*# sourceMappingURL=main.css.map */
