@@ -43,4 +43,26 @@
       }
     }
   }
+  .nav-feedbacks {
+    background-color: $bg-info-color;
+    .tabs {
+      .nav-tabs {
+        .nav-item{
+          a{
+            color: #000000;
+            font-family: $font-roboto;
+            font-size: 20px;
+            padding: 25px 80px;
+            background-color: $bg-info-color;
+            transition: .5s;
+            &:hover{
+              background-color: #fff;
+              border-color: $info-color;
+              color: $info-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }

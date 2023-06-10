@@ -368,4 +368,20 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   content: "";
   left: 47%;
   top: -10px;
+}
+#feedbacks .nav-feedbacks {
+  background-color: #f5fbff;
+}
+#feedbacks .nav-feedbacks .tabs .nav-tabs .nav-item a {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding: 25px 80px;
+  background-color: #f5fbff;
+  transition: 0.5s;
+}
+#feedbacks .nav-feedbacks .tabs .nav-tabs .nav-item a:hover {
+  background-color: #fff;
+  border-color: #009dff;
+  color: #009dff;
 }/*# sourceMappingURL=main.css.map */
