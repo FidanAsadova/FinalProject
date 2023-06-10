@@ -1,0 +1,27 @@
+#about {
+  .container {
+    .about {
+      padding: 150px 0;
+      .row {
+        .img-about {
+          .img {
+            position: relative;
+            .right-img {
+              position: absolute;
+              left: 35%;
+              top: 20%;
+              @media only screen and (max-width: 576px) {
+                display: none;
+              }
+            }
+            .left-img {
+              @media only screen and (max-width: 576px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

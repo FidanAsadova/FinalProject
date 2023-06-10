@@ -4,10 +4,17 @@ header {
     padding: 10px;
     .container {
       .row {
+        @media only screen and (max-width: 767px) {
+          display: flex;
+          flex-direction: column;
+        }
         .header-contact {
           display: flex;
           justify-content: flex-end;
           gap: 40px;
+          @media only screen and (max-width: 767px){
+            justify-content: center;
+          }
           a {
             text-decoration: none;
             color: gray;
@@ -17,6 +24,11 @@ header {
           }
           i {
             font-size: 13px;
+          }
+        }
+        .header-icons{
+          @media only screen and (max-width: 767px){
+            justify-content: center;
           }
         }
       }

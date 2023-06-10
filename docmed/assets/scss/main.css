@@ -19,10 +19,21 @@ header .top-header {
   background-color: #F5FBFF;
   padding: 10px;
 }
+@media only screen and (max-width: 767px) {
+  header .top-header .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .top-header .container .row .header-contact {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
+}
+@media only screen and (max-width: 767px) {
+  header .top-header .container .row .header-contact {
+    justify-content: center;
+  }
 }
 header .top-header .container .row .header-contact a {
   text-decoration: none;
@@ -33,6 +44,11 @@ header .top-header .container .row .header-contact a {
 }
 header .top-header .container .row .header-contact i {
   font-size: 13px;
+}
+@media only screen and (max-width: 767px) {
+  header .top-header .container .row .header-icons {
+    justify-content: center;
+  }
 }
 header #bottom-header .container .bottom-header {
   display: flex;
@@ -127,4 +143,26 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #heroBanner #hero-services .container .hero-services .primary-bg {
   background-color: #5db2ff;
+}
+
+#about .container .about {
+  padding: 150px 0;
+}
+#about .container .about .row .img-about .img {
+  position: relative;
+}
+#about .container .about .row .img-about .img .right-img {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+@media only screen and (max-width: 576px) {
+  #about .container .about .row .img-about .img .right-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #about .container .about .row .img-about .img .left-img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
