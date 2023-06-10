@@ -160,6 +160,12 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #about .container .about {
   padding: 150px 0;
 }
+@media only screen and (max-width: 576px) {
+  #about .container .about .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #about .container .about .row .img-about .img {
   position: relative;
 }
@@ -187,6 +193,13 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #about .container .about .row .info-about {
   padding-left: 70px;
   padding-right: 20px;
+}
+@media only screen and (max-width: 991px) {
+  #about .container .about .row .info-about {
+    margin-top: 150px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }
 #about .container .about .row .info-about .info .info-title {
   position: relative;

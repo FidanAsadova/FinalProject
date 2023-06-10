@@ -3,6 +3,10 @@
     .about {
       padding: 150px 0;
       .row {
+        @media only screen and (max-width: 576px){
+            display: flex;
+            flex-direction: column;
+          }
         .img-about {
           .img {
             position: relative;
@@ -28,6 +32,11 @@
         .info-about {
           padding-left: 70px;
           padding-right: 20px;
+          @media only screen and (max-width: 991px) {
+            margin-top: 150px;
+            padding-left: 0%;
+            padding-right: 0%;
+          }
           .info {
             .info-title {
               position: relative;
@@ -64,16 +73,16 @@
                   font-size: 18px;
                 }
               }
-              .about-btn{
+              .about-btn {
                 @extend %primary-btn;
                 background-color: #fff;
                 color: $info-color;
                 border-color: $info-color;
                 margin-top: 40px;
                 padding: 10px 30px;
-                &:hover{
-                    background-color: $info-color;
-                    color: #fff;
+                &:hover {
+                  background-color: $info-color;
+                  color: #fff;
                 }
               }
             }
