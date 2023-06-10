@@ -243,4 +243,11 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #about .container .about .row .info-about .info .info-body .about-btn:hover {
   background-color: #009dff;
   color: #fff;
+}
+
+#department {
+  background-color: #f5fbff;
+}
+#department .container .department {
+  padding: 100px 0;
 }/*# sourceMappingURL=main.css.map */
