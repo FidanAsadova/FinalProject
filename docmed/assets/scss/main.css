@@ -6,17 +6,17 @@
   box-sizing: border-box;
 }
 
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
+#about .container .about .row .info-about .info .info-body .about-btn, #heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  background-color: #009DFF;
+  background-color: #009dff;
   color: white;
   transition: 0.5s;
 }
 
 header .top-header {
-  background-color: #F5FBFF;
+  background-color: #f5fbff;
   padding: 10px;
 }
 @media only screen and (max-width: 767px) {
@@ -79,8 +79,8 @@ header #bottom-header .container .bottom-header .header-btn {
 }
 header #bottom-header .container .bottom-header .header-btn:hover {
   background-color: #fff;
-  border: 1px solid #009DFF;
-  color: #009DFF;
+  border: 1px solid #009dff;
+  color: #009dff;
 }
 
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
@@ -119,8 +119,8 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn:hover {
   background-color: #fff;
-  border: 1px solid #009DFF;
-  color: #009DFF;
+  border: 1px solid #009dff;
+  color: #009dff;
 }
 #heroBanner #hero-services {
   background-color: #83c4ff;
@@ -165,16 +165,69 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #about .container .about .row .img-about .img .right-img {
   position: absolute;
-  left: 35%;
-  top: 20%;
+  left: 40%;
+  top: 23%;
+  width: 60%;
+  border-radius: 8px;
 }
 @media only screen and (max-width: 576px) {
   #about .container .about .row .img-about .img .right-img {
     display: none;
   }
 }
+#about .container .about .row .img-about .img .left-img {
+  width: 60%;
+  border-radius: 8px;
+}
 @media only screen and (max-width: 576px) {
   #about .container .about .row .img-about .img .left-img {
     width: 100%;
   }
+}
+#about .container .about .row .info-about {
+  padding-left: 70px;
+  padding-right: 20px;
+}
+#about .container .about .row .info-about .info .info-title {
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+#about .container .about .row .info-about .info .info-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: #009dff;
+}
+#about .container .about .row .info-about .info .info-body .p-best {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+#about .container .about .row .info-about .info .info-body .p-esteem {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+#about .container .about .row .info-about .info .info-body .p-icon span {
+  font-family: "Roboto", sans-serif;
+  color: #7f7284;
+  font-weight: 400;
+  font-size: 18px;
+}
+#about .container .about .row .info-about .info .info-body .about-btn {
+  background-color: #fff;
+  color: #009dff;
+  border-color: #009dff;
+  margin-top: 40px;
+  padding: 10px 30px;
+}
+#about .container .about .row .info-about .info .info-body .about-btn:hover {
+  background-color: #009dff;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -8,15 +8,73 @@
             position: relative;
             .right-img {
               position: absolute;
-              left: 35%;
-              top: 20%;
+              left: 40%;
+              top: 23%;
+              width: 60%;
+              border-radius: 8px;
               @media only screen and (max-width: 576px) {
                 display: none;
               }
             }
             .left-img {
+              width: 60%;
+              border-radius: 8px;
               @media only screen and (max-width: 576px) {
                 width: 100%;
+              }
+            }
+          }
+        }
+        .info-about {
+          padding-left: 70px;
+          padding-right: 20px;
+          .info {
+            .info-title {
+              position: relative;
+              font-size: 23px;
+              margin-bottom: 40px;
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 50px;
+                background: $info-color;
+              }
+            }
+            .info-body {
+              .p-best {
+                font-size: 40px;
+                font-weight: 500;
+                font-family: $font-roboto;
+              }
+              .p-esteem {
+                font-family: $font-roboto;
+                color: gray;
+                font-weight: 300;
+                font-size: 18px;
+                padding-bottom: 20px;
+              }
+              .p-icon {
+                span {
+                  font-family: $font-roboto;
+                  color: #7f7284;
+                  font-weight: 400;
+                  font-size: 18px;
+                }
+              }
+              .about-btn{
+                @extend %primary-btn;
+                background-color: #fff;
+                color: $info-color;
+                border-color: $info-color;
+                margin-top: 40px;
+                padding: 10px 30px;
+                &:hover{
+                    background-color: $info-color;
+                    color: #fff;
+                }
               }
             }
           }
