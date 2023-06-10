@@ -1,9 +1,71 @@
-#department{
-    background-color: $bg-info-color;
-    .container{
-        .department{
-            padding: 100px 0;
-            
+#department {
+  background-color: $bg-info-color;
+  .container {
+    .department {
+      padding: 100px 0;
+      .head {
+        .p-title {
+          font-size: 36px;
+          font-weight: 500;
+          font-family: $font-roboto;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 40%;
+            bottom: -10px;
+            height: 2px;
+            width: 55px;
+            background: $info-color;
+          }
         }
+        .p-esteem {
+          font-family: $font-roboto;
+          color: gray;
+          font-weight: 200;
+          font-size: 18px;
+          padding-bottom: 20px;
+          width: 50%;
+          text-align: center;
+          @media only screen and (max-width: 991px){
+            width: 100%;
+          }
+        }
+      }
+      .row {
+        @media only screen and (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col {
+          .department-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04);
+            .card-item {
+              padding: 25px;
+              .item-title {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $font-roboto;
+              }
+              .item-body {
+                color: gray;
+                font-family: $font-roboto;
+                font-weight: 300;
+              }
+              a {
+                text-decoration: none;
+                font-weight: 500;
+                color: $info-color;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }

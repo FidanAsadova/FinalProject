@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -218,17 +219,17 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #about .container .about .row .info-about .info .info-body .p-best {
   font-size: 40px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 #about .container .about .row .info-about .info .info-body .p-esteem {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: gray;
   font-weight: 300;
   font-size: 18px;
   padding-bottom: 20px;
 }
 #about .container .about .row .info-about .info .info-body .p-icon span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #7f7284;
   font-weight: 400;
   font-size: 18px;
@@ -250,4 +251,65 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #department .container .department {
   padding: 100px 0;
+}
+#department .container .department .head .p-title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+#department .container .department .head .p-title::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  height: 2px;
+  width: 55px;
+  background: #009dff;
+}
+#department .container .department .head .p-esteem {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-weight: 200;
+  font-size: 18px;
+  padding-bottom: 20px;
+  width: 50%;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #department .container .department .head .p-esteem {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #department .container .department .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#department .container .department .row .col .department-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04);
+}
+#department .container .department .row .col .department-card .card-item {
+  padding: 25px;
+}
+#department .container .department .row .col .department-card .card-item .item-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+#department .container .department .row .col .department-card .card-item .item-body {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+#department .container .department .row .col .department-card .card-item a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #009dff;
+}
+#department .container .department .row .col .department-card .card-item a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
