@@ -17,10 +17,18 @@
                 .p-health {
                   font-size: 70px;
                   font-weight: 600;
+                  @media only screen and (max-width: 767px){
+                    font-size: 55px;
+                    font-weight: 600;
+                  }
                 }
                 .p-hole {
                   font-size: 70px;
                   font-weight: 300;
+                  @media only screen and (max-width: 767px){
+                    font-size: 55px;
+                    font-weight: 300;
+                  }
                 }
                 .hero-btn {
                   @extend %primary-btn;

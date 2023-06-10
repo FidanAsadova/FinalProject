@@ -97,9 +97,21 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   font-size: 70px;
   font-weight: 600;
 }
+@media only screen and (max-width: 767px) {
+  #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
+    font-size: 55px;
+    font-weight: 600;
+  }
+}
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
   font-size: 70px;
   font-weight: 300;
+}
+@media only screen and (max-width: 767px) {
+  #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
+    font-size: 55px;
+    font-weight: 300;
+  }
 }
 #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn {
   padding: 15px 40px;
