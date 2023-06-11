@@ -1,0 +1,43 @@
+#doctors {
+  .container {
+    .doctors {
+      padding: 60px 0;
+      .head {
+        .head-title {
+          padding: 20px 0;
+          font-family: $font-roboto;
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+      .row {
+        @media only screen and (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col {
+          .doctor {
+            border-radius: 8px;
+            background-color: $bg-info-color;
+            .doctor-about {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 15px 0;
+              .doctor-name {
+                font-family: $font-roboto;
+                font-weight: 500;
+                font-size: 20px;
+              }
+              .doctor-status {
+                font-family: $font-roboto;
+                color: gray;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

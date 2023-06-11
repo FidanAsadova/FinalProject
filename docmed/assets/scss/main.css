@@ -419,4 +419,40 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   color: gray;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
+
+#doctors .container .doctors {
+  padding: 60px 0;
+}
+#doctors .container .doctors .head .head-title {
+  padding: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 576px) {
+  #doctors .container .doctors .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#doctors .container .doctors .row .col .doctor {
+  border-radius: 8px;
+  background-color: #f5fbff;
+}
+#doctors .container .doctors .row .col .doctor .doctor-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+#doctors .container .doctors .row .col .doctor .doctor-about .doctor-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+#doctors .container .doctors .row .col .doctor .doctor-about .doctor-status {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */
