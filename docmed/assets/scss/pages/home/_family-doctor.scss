@@ -1,7 +1,29 @@
-#family-doctor{
-    .container{
-        .family-doctor{
-            padding: 100px 0;
+#family-doctor {
+  .container {
+    .family-doctor {
+      padding: 100px 0;
+      .row {
+        @media only screen and (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+          }
+        .col {
+          .family-info {
+            .info-icon {
+              background-color: $info-color;
+              padding: 20px;
+              border-radius: 70%;
+              display: inline-block;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 20px;
+              i {
+                font-size: 30px;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }

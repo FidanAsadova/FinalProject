@@ -388,4 +388,22 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 
 #family-doctor .container .family-doctor {
   padding: 100px 0;
+}
+@media only screen and (max-width: 576px) {
+  #family-doctor .container .family-doctor .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#family-doctor .container .family-doctor .row .col .family-info .info-icon {
+  background-color: #009dff;
+  padding: 20px;
+  border-radius: 70%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#family-doctor .container .family-doctor .row .col .family-info .info-icon i {
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
