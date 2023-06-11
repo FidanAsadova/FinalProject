@@ -1,0 +1,113 @@
+#emergency {
+  .emergency {
+    padding: 100px 0;
+    .row {
+      @media only screen and (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .col {
+        .img-left {
+          background-image: url("https://preview.colorlib.com/theme/docmed/img/banner/emergency-1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 100px 0;
+          position: relative;
+          z-index: 0;
+          .emergency-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .info {
+              .p-emerg {
+                font-family: $font-roboto;
+                font-size: 20px;
+                color: white;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+              }
+            }
+            .info-btn {
+              .emergency-btn {
+                @extend %primary-btn;
+                background-color: transparent;
+                border-color: white;
+                border-radius: 25px;
+                padding: 10px 28px;
+                &:hover {
+                  background-color: #fff;
+                  color: #5db2ff;
+                }
+              }
+            }
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: #5db2ff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+          }
+        }
+        .img-right {
+          background-image: url("https://preview.colorlib.com/theme/docmed/img/banner/emergency-2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 100px 0;
+          position: relative;
+          z-index: 0;
+          .emergency-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .info {
+              .p-emerg {
+                font-family: $font-roboto;
+                font-size: 20px;
+                color: white;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+              }
+            }
+            .info-btn {
+              .emergency-btn {
+                @extend %primary-btn;
+                background-color: transparent;
+                border-color: white;
+                border-radius: 25px;
+                padding: 10px 28px;
+                &:hover {
+                  background-color: #fff;
+                  color: #5db2ff;
+                }
+              }
+            }
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            background-color: #5db2ff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

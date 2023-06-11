@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-#about .container .about .row .info-about .info .info-body .about-btn, #heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
+#emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn, #emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn, #about .container .about .row .info-about .info .info-body .about-btn, #heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -473,4 +473,104 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #doctors .container .doctors .row .col .doctor .doctor-about .doctor-status {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
+}
+
+#emergency .emergency {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 991px) {
+  #emergency .emergency .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#emergency .emergency .row .col .img-left {
+  background-image: url("https://preview.colorlib.com/theme/docmed/img/banner/emergency-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  z-index: 0;
+}
+#emergency .emergency .row .col .img-left .emergency-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#emergency .emergency .row .col .img-left .emergency-info .info .p-emerg {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+#emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 25px;
+  padding: 10px 28px;
+}
+#emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn:hover {
+  background-color: #fff;
+  color: #5db2ff;
+}
+#emergency .emergency .row .col .img-left::before {
+  position: absolute;
+  content: "";
+  background-color: #5db2ff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#emergency .emergency .row .col .img-right {
+  background-image: url("https://preview.colorlib.com/theme/docmed/img/banner/emergency-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  z-index: 0;
+}
+#emergency .emergency .row .col .img-right .emergency-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#emergency .emergency .row .col .img-right .emergency-info .info .p-emerg {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+#emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 25px;
+  padding: 10px 28px;
+}
+#emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn:hover {
+  background-color: #fff;
+  color: #5db2ff;
+}
+#emergency .emergency .row .col .img-right::before {
+  position: absolute;
+  content: "";
+  background-color: #5db2ff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */
