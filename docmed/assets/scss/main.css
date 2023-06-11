@@ -440,11 +440,30 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   border-radius: 8px;
   background-color: #f5fbff;
 }
+#doctors .container .doctors .row .col .doctor .img {
+  overflow: hidden;
+}
+#doctors .container .doctors .row .col .doctor .img img {
+  transition: 0.4s;
+}
+#doctors .container .doctors .row .col .doctor .img img:hover {
+  transform: scale(1.1);
+}
+#doctors .container .doctors .row .col .doctor:hover .doctor-about {
+  background-color: #009dff;
+}
+#doctors .container .doctors .row .col .doctor:hover .doctor-name {
+  color: white;
+}
+#doctors .container .doctors .row .col .doctor:hover .doctor-status {
+  color: white;
+}
 #doctors .container .doctors .row .col .doctor .doctor-about {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px 0;
+  transition: 0.3s;
 }
 #doctors .container .doctors .row .col .doctor .doctor-about .doctor-name {
   font-family: "Poppins", sans-serif;
@@ -453,6 +472,5 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #doctors .container .doctors .row .col .doctor .doctor-about .doctor-status {
   font-family: "Poppins", sans-serif;
-  color: gray;
   font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

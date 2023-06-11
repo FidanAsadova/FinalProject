@@ -19,11 +19,31 @@
           .doctor {
             border-radius: 8px;
             background-color: $bg-info-color;
+            .img {
+              overflow: hidden;
+              img {
+                transition: 0.4s;
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+            }
+            &:hover .doctor-about {
+              background-color: $info-color;
+            }
+            &:hover .doctor-name {
+              color: white;
+            }
+            &:hover .doctor-status {
+              color: white;
+            }
             .doctor-about {
               display: flex;
               flex-direction: column;
               align-items: center;
               padding: 15px 0;
+              transition: 0.3s;
+
               .doctor-name {
                 font-family: $font-roboto;
                 font-weight: 500;
@@ -31,7 +51,6 @@
               }
               .doctor-status {
                 font-family: $font-roboto;
-                color: gray;
                 font-size: 13px;
               }
             }
