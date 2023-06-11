@@ -395,8 +395,11 @@ header #bottom-header .container .bottom-header .header-btn:hover {
     flex-direction: column;
   }
 }
+#family-doctor .container .family-doctor .row .col .family-info {
+  padding: 40px 0;
+}
 #family-doctor .container .family-doctor .row .col .family-info .info-icon {
-  background-color: #009dff;
+  background-color: #5DB2FF;
   padding: 20px;
   border-radius: 70%;
   display: inline-block;
@@ -406,4 +409,14 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #family-doctor .container .family-doctor .row .col .family-info .info-icon i {
   font-size: 30px;
+}
+#family-doctor .container .family-doctor .row .col .family-info .info-title {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+#family-doctor .container .family-doctor .row .col .family-info .info-body {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

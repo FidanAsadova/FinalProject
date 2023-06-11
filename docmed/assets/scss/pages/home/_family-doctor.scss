@@ -9,8 +9,9 @@
           }
         .col {
           .family-info {
+            padding: 40px 0;
             .info-icon {
-              background-color: $info-color;
+              background-color: #5DB2FF;
               padding: 20px;
               border-radius: 70%;
               display: inline-block;
@@ -20,6 +21,16 @@
               i {
                 font-size: 30px;
               }
+            }
+            .info-title{
+                font-size: 20px;
+                font-family: $font-roboto;
+                font-weight: 500;
+            }
+            .info-body{
+                color: gray;
+                font-family: $font-roboto;
+                font-weight: 300;
             }
           }
         }
