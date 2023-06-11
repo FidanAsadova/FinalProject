@@ -4,6 +4,11 @@
     .footer {
       padding: 150px 0;
       .row {
+        align-items: flex-start;
+        @media only screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+          }
         .col {
           p,
           a {
@@ -30,6 +35,9 @@
         }
         .col-lg-8 {
           padding-left: 60px;
+          @media only screen and (max-width: 991px) {
+            padding-left: 20px;
+          }
           nav {
             .nav-title {
               font-size: 23px;
