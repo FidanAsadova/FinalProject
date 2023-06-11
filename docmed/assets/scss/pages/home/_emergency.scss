@@ -1,6 +1,7 @@
 #emergency {
   .emergency {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     .row {
       @media only screen and (max-width: 991px) {
         display: flex;
@@ -14,6 +15,7 @@
           padding: 100px 0;
           position: relative;
           z-index: 0;
+          background-position: l;
           .emergency-info {
             display: flex;
             align-items: center;
@@ -64,6 +66,7 @@
           padding: 100px 0;
           position: relative;
           z-index: 0;
+          background-position: center;
           .emergency-info {
             display: flex;
             align-items: center;
