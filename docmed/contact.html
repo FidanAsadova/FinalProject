@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,11 +17,274 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/scss/main.css">
+    <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>Contact</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col col-md-12 col-lg-6">
+              <div class="header-icons d-flex gap-4">
+                <a href=""
+                  ><i
+                    class="fa-brands fa-linkedin-in"
+                    style="color: gainsboro"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fa-brands fa-facebook-f"
+                    style="color: gainsboro"
+                  ></i
+                ></a>
+                <a href=""
+                  ><i
+                    class="fa-brands fa-google-plus-g"
+                    style="color: gainsboro"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="col col-md-12 col-lg-6 header-contact">
+              <div class="mail-address">
+                <i class="fa-solid fa-envelope" style="color: #00a9ff"></i>
+                <a href=""> info@docmed.com </a>
+              </div>
+              <div class="phone-number">
+                <i class="fa-solid fa-phone" style="color: #00a9ff"></i>
+                <a href=""> 160160</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom-header">
+        <div class="container">
+          <div class="bottom-header">
+            <div class="logo">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </div>
+            <nav class="header-nav">
+              <ul class="m-0 p-0 header-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Department</a></li>
+                <li><a href="">Blog</a></li>
+                <li>
+                  <a href=""
+                    ><div class="dropdown">
+                      <a
+                        class="dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Pages
+                      </a>
+
+                      <ul
+                        class="dropdown-menu border-0 shadow-sm rounded-0"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="aboutUs.html">About</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Favorite</a></li>
+                      </ul>
+                    </div></a
+                  >
+                </li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <a class="btn header-btn" href="#">Make an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="doctors-page">
+      <div class="container">
+        <div class="doctors-page">
+          <p class="services-title">Contact</p>
+          <p class="services-item">Home / Contact</p>
+        </div>
+      </div>
+    </section>
+    <section id="hospital-map">
+      <div class="container">
+        <div class="hospital-map">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193388.35132552893!2d-74.24032688140869!3d40.76877675677085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258c716fbcca3%3A0x53a08b3e549cc6a0!2sNewYork-Presbyterian%20Hospital%2FWeill%20Cornell%20Medical%20Center!5e0!3m2!1str!2saz!4v1686593948080!5m2!1str!2saz"
+              width="1200"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hospital-form">
+      <div class="container">
+        <div class="hospital-form">
+          <p class="form-title">Get in Touch</p>
+          <div class="row">
+            <div class="col col-sm-12 col-lg-8">
+              <form action="">
+                <textarea
+                  class="form-control mb-4 shadow-sm"
+                  placeholder="Name"
+                  name="name"
+                  id="form-name"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="row">
+                  <div class="col col-sm-12 col-lg-6 mb-4">
+                    <input
+                      placeholder="Enter Your Name"
+                      class="form-control shadow-sm"
+                      type="text"
+                    />
+                  </div>
+                  <div class="col col-sm-12 col-lg-6 mb-4">
+                    <input
+                      placeholder="Email"
+                      class="form-control shadow-sm"
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <input
+                  class="form-control mb-4 shadow-sm"
+                  placeholder="Enter Subject"
+                  type="text"
+                />
+                <button class="btn contact-btn">S E N D</button>
+              </form>
+            </div>
+            <div class="col col-sm-12 col-lg-1"></div>
+            <div class="col col-sm-12 col-lg-3">
+              <div class="address d-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-house" style="color: #bdbfc2"></i>
+                </div>
+                <div class="address-title">
+                  <p class="p-0 m-0 p-address">Buttonwood, California.</p>
+                  <p class="p-0 m-0 p-alt-text">Rosemead, CA 91770</p>
+                </div>
+              </div>
+              <div class="address d-flex">
+                <div class="icon">
+                  <i class="fa-solid fa-tablet-screen-button" style="color: #bdbfc2;"></i>
+                </div>
+                <div class="address-title">
+                  <p class="p-0 m-0 p-address ps-1">+1 253 565 2365</p>
+                  <p class="p-0 m-0 p-alt-text ps-2">Mon to Fri 9am to 6pm</p>
+                </div>
+              </div>
+              <div class="address d-flex">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope" style="color: #bdbfc2;"></i>
+                </div>
+                <div class="address-title">
+                  <p class="p-0 m-0 p-address ps-1">support@colorlib.com</p>
+                  <p class="p-0 m-0 p-alt-text ps-1">Send us your query anytime!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer">
+          <div class="row">
+            <div class="col col-sm-12 col-lg-4 p-3 mb-5">
+              <div class="logo">
+                <a href="#"
+                  ><img src="./assets/images/footer_logo.png" alt="logo"
+                /></a>
+              </div>
+              <p class="p-footer">
+                Firmament morning sixth subdue darkness creeping gathered
+                divide.
+              </p>
+              <div class="footer-icons">
+                <a href="#">
+                  <div class="icon-div">
+                    <i
+                      class="fa-brands fa-facebook-f"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="icon-div">
+                    <i
+                      class="fa-brands fa-twitter"
+                      style="color: #ffffff"
+                    ></i></div
+                ></a>
+                <a href="#">
+                  <div class="icon-div">
+                    <i
+                      class="fa-brands fa-instagram"
+                      style="color: #ffffff"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+            <div class="col col-sm-12 col-lg-8">
+              <div class="row">
+                <div class="col col-sm-12 col-lg-4 mb-5">
+                  <nav>
+                    <p class="nav-title">Departments</p>
+                    <ul class="p-0 m-0">
+                      <li><a href="#">Eye Care</a></li>
+                      <li><a href="#">Skin Care</a></li>
+                      <li><a href="#">Pathology</a></li>
+                      <li><a href="#">Medicine</a></li>
+                      <li><a href="#">Dental</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col col-sm-12 col-lg-4 mb-5">
+                  <nav>
+                    <p class="nav-title">Useful Links</p>
+                    <ul class="p-0 m-0">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Details</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Department</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col col-sm-12 col-lg-4 mb-5">
+                  <nav>
+                    <p class="nav-title">Address</p>
+                    <ul class="p-0 m-0">
+                      <li><a href="#">200, D-block, Green lane USA</a></li>
+                      <li><a href="#">+10 367 467 8934</a></li>
+                      <li><a href="#">docmed@contact.com</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -33,5 +296,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-</body>
+  </body>
 </html>

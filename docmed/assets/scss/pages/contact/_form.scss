@@ -1,0 +1,63 @@
+#hospital-form {
+  .container {
+    .hospital-form {
+      padding-bottom: 150px;
+      .form-title {
+        font-size: 28px;
+        font-family: $font-roboto;
+        font-weight: 600;
+      }
+      .row {
+        .col-lg-8 {
+          form {
+            .contact-btn {
+              @extend %primary-btn;
+              border-radius: 0;
+              background-color: #fff;
+              color: $info-color;
+              border-color: $info-color;
+              padding: 18px 45px;
+              &:hover {
+                background-color: $info-color;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .col-lg-3{
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+
+          .address{
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+            .icon{
+              // display: flex;
+              // justify-content: center;
+              // align-items: center;
+              i{
+                font-size: 30px;
+              }
+            }
+            .address-title{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              .p-address{
+                font-weight: 600;
+                font-family: $font-roboto;
+              }
+              .p-alt-text{
+                color: gray;
+                font-family: $font-roboto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-#emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn, #emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn, #about .container .about .row .info-about .info .info-body .about-btn, #heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
+#hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn, #emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn, #emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn, #about .container .about .row .info-about .info .info-body .about-btn, #hero-banner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -84,7 +84,7 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   color: #009dff;
 }
 
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
+#hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -94,71 +94,71 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   color: #000;
   font-family: "Poppins", sans-serif;
 }
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
+#hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
   font-size: 70px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
+  #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-health {
     font-size: 55px;
     font-weight: 600;
   }
 }
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
+#hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
   font-size: 70px;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  #heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
+  #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .p-hole {
     font-size: 55px;
     font-weight: 300;
   }
 }
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn {
+#hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn {
   padding: 15px 40px;
   margin-top: 20px;
 }
-#heroBanner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn:hover {
+#hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn:hover {
   background-color: #fff;
   border: 1px solid #009dff;
   color: #009dff;
 }
-#heroBanner #hero-services {
+#hero-banner #hero-services {
   background-color: #83c4ff;
 }
-#heroBanner #hero-services .container .hero-services .col {
+#hero-banner #hero-services .container .hero-services .col {
   padding: 40px 30px;
 }
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-head .fa-solid {
+#hero-banner #hero-services .container .hero-services .col .hero-card-icon .hero-card-head .fa-solid {
   font-size: 50px;
   padding-bottom: 20px;
 }
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-title {
+#hero-banner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-title {
   color: white;
   font-size: 30px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-body {
+#hero-banner #hero-services .container .hero-services .col .hero-card-icon .hero-card-body .card-body {
   color: white;
   font-size: 18px;
   padding: 5px 0;
   font-family: "Poppins", sans-serif;
 }
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card {
+#hero-banner #hero-services .container .hero-services .col .hero-card-icon .btn-card {
   background-color: transparent;
   border-color: white;
   padding: 10px 30px;
   margin-top: 20px;
   font-weight: 500;
 }
-#heroBanner #hero-services .container .hero-services .col .hero-card-icon .btn-card:hover {
+#hero-banner #hero-services .container .hero-services .col .hero-card-icon .btn-card:hover {
   background-color: #fff;
   color: #5db2ff;
 }
-#heroBanner #hero-services .container .hero-services .primary-bg {
+#hero-banner #hero-services .container .hero-services .primary-bg {
   background-color: #5db2ff;
 }
 
@@ -709,4 +709,58 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 20px;
+}
+
+#hospital-map .container .hospital-map .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+#hospital-form .container .hospital-form {
+  padding-bottom: 150px;
+}
+#hospital-form .container .hospital-form .form-title {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn {
+  border-radius: 0;
+  background-color: #fff;
+  color: #009dff;
+  border-color: #009dff;
+  padding: 18px 45px;
+}
+#hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn:hover {
+  background-color: #009dff;
+  color: #fff;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 .address {
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 .address .icon i {
+  font-size: 30px;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 .address .address-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 .address .address-title .p-address {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+#hospital-form .container .hospital-form .row .col-lg-3 .address .address-title .p-alt-text {
+  color: gray;
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=main.css.map */
