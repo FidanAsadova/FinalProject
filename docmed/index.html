@@ -89,7 +89,9 @@
                         class="dropdown-menu border-0 shadow-sm rounded-0"
                         aria-labelledby="dropdownMenuLink"
                       >
-                        <li><a class="dropdown-item" href="aboutUs.html">About</a></li>
+                        <li>
+                          <a class="dropdown-item" href="aboutUs.html">About</a>
+                        </li>
                         <li><a class="dropdown-item" href="#">Favorite</a></li>
                       </ul>
                     </div></a
@@ -100,9 +102,53 @@
               </ul>
             </nav>
             <a class="btn header-btn" href="#">Make an Appointment</a>
+            <div id="menu-burger">
+              <div class="container">
+                <div class="menu-burger">
+                  <button
+                    class="btn btn-burger"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop"
+                  >
+                  <i class="fa-solid fa-bars" style="color: #1c5fd4;"></i>
+                  </button>
+                  <div
+                    class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasWithBackdrop"
+                    aria-labelledby="offcanvasWithBackdropLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <nav class="burger-menu">
+                        <ul class="m-0 p-0 burger">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="services.html">Department</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="aboutUs.html">About</a></li>
+                          <li><a href="#">Favorite</a></li>
+                          <li><a href="doctors.html">Doctors</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
     </header>
     <section id="hero-banner">
       <div
@@ -447,35 +493,41 @@
     <section id="emergency">
       <div class="container">
         <div class="emergency">
-        <div class="row">
-          <div class="col col-md-12 col-lg-6 p-0">
-            <div class="img-left">
-              <div class="emergency-info">
-                <div class="info">
-                  <p class="p-emerg">For Any Emergency Contact</p>
-                  <p class="text-light">Esteem spirit temper too say adieus.</p>
-                </div>
-                <div class="info-btn">
-                  <a class="emergency-btn btn" href="#">+10 378 4673 467</a>
+          <div class="row">
+            <div class="col col-md-12 col-lg-6 p-0">
+              <div class="img-left">
+                <div class="emergency-info">
+                  <div class="info">
+                    <p class="p-emerg">For Any Emergency Contact</p>
+                    <p class="text-light">
+                      Esteem spirit temper too say adieus.
+                    </p>
+                  </div>
+                  <div class="info-btn">
+                    <a class="emergency-btn btn" href="#">+10 378 4673 467</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col col-md-12 col-lg-6 p-0">
-            <div class="img-right">
-              <div class="emergency-info">
-                <div class="info">
-                  <p class="p-emerg">Make an Online Appointment</p>
-                  <p class="text-light">Esteem spirit temper too say adieus.</p>
-                </div>
-                <div class="info-btn">
-                  <a class="emergency-btn btn" href="#">Make An Appointment</a>
+            <div class="col col-md-12 col-lg-6 p-0">
+              <div class="img-right">
+                <div class="emergency-info">
+                  <div class="info">
+                    <p class="p-emerg">Make an Online Appointment</p>
+                    <p class="text-light">
+                      Esteem spirit temper too say adieus.
+                    </p>
+                  </div>
+                  <div class="info-btn">
+                    <a class="emergency-btn btn" href="#"
+                      >Make An Appointment</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <footer id="footer">
@@ -484,7 +536,9 @@
           <div class="row">
             <div class="col col-sm-12 col-lg-4 p-3 mb-5">
               <div class="logo">
-                <a href="#"><img src="./assets/images/footer_logo.png" alt="logo" /></a>
+                <a href="#"
+                  ><img src="./assets/images/footer_logo.png" alt="logo"
+                /></a>
               </div>
               <p class="p-footer">
                 Firmament morning sixth subdue darkness creeping gathered
@@ -493,17 +547,26 @@
               <div class="footer-icons">
                 <a href="#">
                   <div class="icon-div">
-                  <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
-                </div>
-              </a>
+                    <i
+                      class="fa-brands fa-facebook-f"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                </a>
                 <a href="#">
                   <div class="icon-div">
-                  <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
-                </div></a>
+                    <i
+                      class="fa-brands fa-twitter"
+                      style="color: #ffffff"
+                    ></i></div
+                ></a>
                 <a href="#">
                   <div class="icon-div">
-                  <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
-                </div></a>
+                    <i
+                      class="fa-brands fa-instagram"
+                      style="color: #ffffff"
+                    ></i></div
+                ></a>
               </div>
             </div>
             <div class="col col-sm-12 col-lg-8">

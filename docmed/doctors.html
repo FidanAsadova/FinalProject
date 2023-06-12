@@ -102,6 +102,49 @@
               </ul>
             </nav>
             <a class="btn header-btn" href="#">Make an Appointment</a>
+            <div id="menu-burger">
+              <div class="container">
+                <div class="menu-burger">
+                  <button
+                    class="btn btn-burger"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop"
+                  >
+                  <i class="fa-solid fa-bars" style="color: #1c5fd4;"></i>
+                  </button>
+                  <div
+                    class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasWithBackdrop"
+                    aria-labelledby="offcanvasWithBackdropLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <nav class="burger-menu">
+                        <ul class="m-0 p-0 burger">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="services.html">Department</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="aboutUs.html">About</a></li>
+                          <li><a href="#">Favorite</a></li>
+                          <li><a href="#">Doctors</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,8 +152,12 @@
     <section id="doctors-page">
       <div class="container">
         <div class="doctors-page">
-          <p class="services-title">Doctors</p>
-          <p class="services-item">Home / Doctors</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb align-items-center">
+              <li class="breadcrumb-item"><a class="services-title" href="index.html">Home</a></li>
+              <li class="breadcrumb-item active services-item" aria-current="page">Doctors</li>
+            </ol>
+          </nav>
         </div>
       </div>
     </section>

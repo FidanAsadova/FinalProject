@@ -83,6 +83,42 @@ header #bottom-header .container .bottom-header .header-btn:hover {
   border: 1px solid #009dff;
   color: #009dff;
 }
+header #bottom-header .container .bottom-header #menu-burger {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  header #bottom-header .container .bottom-header #menu-burger {
+    display: block;
+  }
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .btn-burger {
+  background-color: #fff;
+  box-shadow: none;
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .offcanvas {
+  background-color: navy;
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .offcanvas .offcanvas-body {
+  padding-top: 55px;
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .offcanvas .offcanvas-body .burger-menu .burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .offcanvas .offcanvas-body .burger-menu .burger li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+}
+header #bottom-header .container .bottom-header #menu-burger .container .menu-burger .offcanvas .offcanvas-body .burger-menu .burger li a:hover {
+  font-weight: 700;
+  text-shadow: #fff;
+  text-decoration: underline;
+}
 
 #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption {
   display: flex;
@@ -664,10 +700,11 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #services .container .services .services-title {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
   margin: 0;
   padding-bottom: 0;
+  text-decoration: none;
 }
 #services .container .services .services-item {
   font-family: "Poppins", sans-serif;
@@ -700,10 +737,11 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 #doctors-page .container .doctors-page .services-title {
   font-family: "Poppins", sans-serif;
   color: white;
-  font-size: 50px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 400;
   margin: 0;
   padding-bottom: 0;
+  text-decoration: none;
 }
 #doctors-page .container .doctors-page .services-item {
   font-family: "Poppins", sans-serif;
