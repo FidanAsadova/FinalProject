@@ -637,4 +637,40 @@ header #bottom-header .container .bottom-header .header-btn:hover {
 }
 #footer .container .footer .row .col-lg-8 nav ul li a:hover {
   color: #009dff;
+}
+
+#services {
+  background-image: url("https://preview.colorlib.com/theme/docmed/img/banner/bradcam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+  z-index: 0;
+}
+#services::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
+}
+#services .container .services {
+  padding: 140px 0;
+}
+#services .container .services .services-title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0;
+}
+#services .container .services .services-item {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
