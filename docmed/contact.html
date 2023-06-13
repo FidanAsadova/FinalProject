@@ -101,7 +101,119 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
-            <a class="btn header-btn" href="#">Make an Appointment</a>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn header-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Make an Appointment
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog w-100">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="row mb-4">
+                        <div class="col col-6">
+                          <input
+                            required
+                            placeholder="Pick Date"
+                            class="form-control shadow-sm"
+                            type="date"
+                          />
+                        </div>
+                        <div class="col col-6">
+                          <input
+                            required
+                            placeholder="Pick Date"
+                            class="form-control shadow-sm"
+                            type="date"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col col-6">
+                          <select
+                            required
+                            class="form-control shadow-sm"
+                            name="select-department"
+                            id="select-department"
+                          >
+                            <option value="department">Department</option>
+                            <option value="eye-care">Eye Care</option>
+                            <option value="dental-care">Dental Care</option>
+                            <option value="physical-therapy">
+                              Physical Therapy
+                            </option>
+                          </select>
+                        </div>
+                        <div class="col col-6">
+                          <select
+                            required
+                            class="form-control shadow-sm"
+                            name="input-doctor"
+                            id="input-doctor"
+                          >
+                            <option value="mirazul-allom">Mirazul Allom</option>
+                            <option value="mirazul-allom">Mirazul Allom</option>
+                            <option value="mirazul-allom">Mirazul Allom</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col col-6">
+                          <input
+                            required
+                            placeholder="Name"
+                            class="form-control shadow-sm"
+                            type="text"
+                          />
+                        </div>
+                        <div class="col col-6">
+                          <input
+                            required
+                            placeholder="Phone no."
+                            class="form-control shadow-sm"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-4">
+                        <div class="col col-12">
+                          <input
+                            required
+                            placeholder="Email"
+                            class="form-control shadow-sm"
+                            type="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn header-btn w-100">
+                          Confirm
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div id="menu-burger">
               <div class="container">
                 <div class="menu-burger">
