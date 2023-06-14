@@ -1,0 +1,102 @@
+#blog {
+  .container {
+    .blog {
+      padding: 100px 0;
+      .row {
+        @media only screen and (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col-lg-8 {
+          .blog-card {
+            box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+            .card-body {
+              a {
+                text-decoration: none;
+                .card-title {
+                  font-family: $font-roboto;
+                  color: black;
+                  font-size: 25px;
+                  font-weight: 600;
+                  &:hover {
+                    color: $info-color;
+                  }
+                }
+              }
+              .card-parag {
+                font-family: $font-roboto;
+                font-weight: 300;
+                color: gray;
+              }
+              .sort-comment {
+                display: flex;
+                gap: 15px;
+                a {
+                  color: gray;
+                  &:hover {
+                    color: $info-color;
+                  }
+                }
+              }
+            }
+            .card-top {
+              .img {
+                position: relative;
+                .date-div {
+                  background-color: $info-color;
+                  color: #fff;
+                  width: 90px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 8px;
+                  position: absolute;
+                  bottom: -20px;
+                  left: 35px;
+                  transition: 0.3s;
+                  &:hover {
+                    background-color: transparent;
+                    .number-p {
+                      color: $info-color;
+                    }
+                    .date-mon {
+                      color: $info-color;
+                    }
+                  }
+                  .number-p {
+                    font-family: $font-roboto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .col-lg-4 {
+          .search-blog {
+            background-color: #fbf9ff;
+            .search-input {
+              height: 60px;
+              border: 1px solid gainsboro;
+              border-radius: 0%;
+            }
+            .drop-div {
+              .btn-filter {
+                @extend %primary-btn;
+                border-color: $info-color;
+                height: 60px;
+                font-size: 18px;
+                background-color: white;
+                color: $info-color;
+                &:hover {
+                  color: white;
+                  background-color: $info-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

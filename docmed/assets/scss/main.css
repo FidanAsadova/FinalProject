@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-#hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn, #emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn, #emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn, #about .container .about .row .info-about .info .info-body .about-btn, #hero-banner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
+#blog .container .blog .row .col-lg-4 .search-blog .drop-div .btn-filter, #hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn, #emergency .emergency .row .col .img-right .emergency-info .info-btn .emergency-btn, #emergency .emergency .row .col .img-left .emergency-info .info-btn .emergency-btn, #about .container .about .row .info-about .info .info-body .about-btn, #hero-banner #hero-services .container .hero-services .col .hero-card-icon .btn-card, #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn, header #bottom-header .container .bottom-header .header-btn {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -813,4 +813,92 @@ header #bottom-header .container .bottom-header #menu-burger .container .menu-bu
 #hospital-form .container .hospital-form .row .col-lg-3 .address .address-title .p-alt-text {
   color: gray;
   font-family: "Poppins", sans-serif;
+}
+
+#blog .container .blog {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 576px) {
+  #blog .container .blog .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#blog .container .blog .row .col-lg-8 .blog-card {
+  box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body a {
+  text-decoration: none;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body a .card-title {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body a .card-title:hover {
+  color: #009dff;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body .card-parag {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: gray;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body .sort-comment {
+  display: flex;
+  gap: 15px;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body .sort-comment a {
+  color: gray;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-body .sort-comment a:hover {
+  color: #009dff;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img {
+  position: relative;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img .date-div {
+  background-color: #009dff;
+  color: #fff;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: absolute;
+  bottom: -20px;
+  left: 35px;
+  transition: 0.3s;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img .date-div:hover {
+  background-color: transparent;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img .date-div:hover .number-p {
+  color: #009dff;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img .date-div:hover .date-mon {
+  color: #009dff;
+}
+#blog .container .blog .row .col-lg-8 .blog-card .card-top .img .date-div .number-p {
+  font-family: "Poppins", sans-serif;
+}
+#blog .container .blog .row .col-lg-4 .search-blog {
+  background-color: #fbf9ff;
+}
+#blog .container .blog .row .col-lg-4 .search-blog .search-input {
+  height: 60px;
+  border: 1px solid gainsboro;
+  border-radius: 0%;
+}
+#blog .container .blog .row .col-lg-4 .search-blog .drop-div .btn-filter {
+  border-color: #009dff;
+  height: 60px;
+  font-size: 18px;
+  background-color: white;
+  color: #009dff;
+}
+#blog .container .blog .row .col-lg-4 .search-blog .drop-div .btn-filter:hover {
+  color: white;
+  background-color: #009dff;
 }/*# sourceMappingURL=main.css.map */
