@@ -767,6 +767,15 @@ header #bottom-header .container .bottom-header #menu-burger .container .menu-bu
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+@media only screen and (max-width: 576px) {
+  #hospital-form .container .hospital-form .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#hospital-form .container .hospital-form .row .col-lg-8 {
+  margin-bottom: 60px;
+}
 #hospital-form .container .hospital-form .row .col-lg-8 form .contact-btn {
   border-radius: 0;
   background-color: #fff;
