@@ -1,0 +1,25 @@
+header {
+  padding: 20px 0;
+  background-color: navy;
+  position: fixed;
+  width: 100%;
+  #bottom-header {
+    .bottom-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .right-header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        a{
+          text-decoration: none;
+          color: black;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

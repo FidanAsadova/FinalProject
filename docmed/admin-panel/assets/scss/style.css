@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 20px 0;
+  background-color: navy;
+  position: fixed;
+  width: 100%;
+}
+header #bottom-header .bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #bottom-header .bottom-header .right-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header #bottom-header .bottom-header .right-header a {
+  text-decoration: none;
+  color: black;
+}
+header #bottom-header .bottom-header .right-header a:hover {
+  text-decoration: underline;
+}
+
+#admin-panel {
+  position: absolute;
+  top: 85px;
+  width: 100%;
+}
+#admin-panel .row {
+  margin: 0;
+}
+#admin-panel .row .col-lg-2 {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#admin-panel .row .col-lg-2 nav .left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#admin-panel .row .col-lg-2 nav .left-menu li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+#admin-panel .row .col-lg-10 {
+  background-color: #f7f7f7;
+}
+#admin-panel .row .col-lg-10 .dashboad-title {
+  font-size: 36px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 10px;
+  font-weight: 600;
+  color: navy;
+  border-radius: 30px;
+}
+#admin-panel .row .col-lg-10 .row .row-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: gray;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card {
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 15px;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card:hover {
+  background-image: linear-gradient(-12deg, #2a57d7 0, #9eeeff 100%) !important;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card:hover .num {
+  color: #fff;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card:hover .info {
+  color: #fff;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card .fa-solid {
+  font-size: 30px;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card .num {
+  font-weight: 600;
+  font-size: 18px;
+}
+#admin-panel .row .col-lg-10 .row .col .reports-card .info {
+  color: gray;
+}/*# sourceMappingURL=style.css.map */
