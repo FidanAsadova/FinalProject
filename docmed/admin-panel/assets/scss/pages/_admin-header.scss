@@ -3,6 +3,7 @@ header {
   background-color: navy;
   position: fixed;
   width: 100%;
+  z-index: 5;
   #bottom-header {
     .bottom-header {
       display: flex;

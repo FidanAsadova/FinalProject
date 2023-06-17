@@ -2,7 +2,7 @@
   position: absolute;
   top: 85px;
   width: 100%;
-  .row {
+  .dashboad-structure {
     margin: 0;
     .col-lg-2 {
       //   box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
@@ -37,7 +37,7 @@
         color: navy;
         border-radius: 30px;
       }
-      .row {
+      .report-structure {
         .row-title {
           font-size: 15px;
           font-weight: 700;
@@ -52,7 +52,7 @@
             // transition: 0.7s;
             // box-shadow: 0 1px 18px rgba(0, 149, 255, 0.66);
             &:hover {
-                background-image: linear-gradient(
+              background-image: linear-gradient(
                 -12deg,
                 #2a57d7 0,
                 #9eeeff 100%
@@ -77,6 +77,30 @@
           }
         }
       }
+      .dashboad-item{
+        .col{
+          .dashboad-table{
+            .btn{
+              background-color: navy;
+              border: navy;
+              &:hover{
+                background-color: transparent;
+                color: navy;
+              }
+            }
+            .table{
+              .border{
+                background-color: rgba(0, 0, 128, 0.733);
+                color: white;
+                th{
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
+
 }

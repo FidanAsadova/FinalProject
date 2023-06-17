@@ -12,6 +12,7 @@ header {
   background-color: navy;
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 header #bottom-header .bottom-header {
   display: flex;
@@ -36,29 +37,29 @@ header #bottom-header .bottom-header .right-header a:hover {
   top: 85px;
   width: 100%;
 }
-#admin-panel .row {
+#admin-panel .dashboad-structure {
   margin: 0;
 }
-#admin-panel .row .col-lg-2 {
+#admin-panel .dashboad-structure .col-lg-2 {
   font-family: "Poppins", sans-serif;
   list-style: none;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#admin-panel .row .col-lg-2 nav .left-menu {
+#admin-panel .dashboad-structure .col-lg-2 nav .left-menu {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-#admin-panel .row .col-lg-2 nav .left-menu li a {
+#admin-panel .dashboad-structure .col-lg-2 nav .left-menu li a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: black;
 }
-#admin-panel .row .col-lg-10 {
+#admin-panel .dashboad-structure .col-lg-10 {
   background-color: #f7f7f7;
 }
-#admin-panel .row .col-lg-10 .dashboad-title {
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-title {
   font-size: 36px;
   text-align: center;
   background-color: #fff;
@@ -68,32 +69,47 @@ header #bottom-header .bottom-header .right-header a:hover {
   color: navy;
   border-radius: 30px;
 }
-#admin-panel .row .col-lg-10 .row .row-title {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .row-title {
   font-size: 15px;
   font-weight: 700;
   color: gray;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card {
   cursor: pointer;
   padding: 10px 18px;
   border-radius: 15px;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card:hover {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card:hover {
   background-image: linear-gradient(-12deg, #2a57d7 0, #9eeeff 100%) !important;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card:hover .num {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card:hover .num {
   color: #fff;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card:hover .info {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card:hover .info {
   color: #fff;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card .fa-solid {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card .fa-solid {
   font-size: 30px;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card .num {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card .num {
   font-weight: 600;
   font-size: 18px;
 }
-#admin-panel .row .col-lg-10 .row .col .reports-card .info {
+#admin-panel .dashboad-structure .col-lg-10 .report-structure .col .reports-card .info {
   color: gray;
+}
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .btn {
+  background-color: navy;
+  border: navy;
+}
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .btn:hover {
+  background-color: transparent;
+  color: navy;
+}
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table .border {
+  background-color: rgba(0, 0, 128, 0.733);
+  color: white;
+}
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table .border th {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
