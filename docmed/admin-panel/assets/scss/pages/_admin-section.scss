@@ -75,22 +75,22 @@
           }
         }
       }
-      .dashboad-item{
-        .col{
-          .dashboad-table{
-            .btn{
+      .dashboad-item {
+        .col {
+          .dashboad-table {
+            .btn {
               background-color: navy;
               border: navy;
-              &:hover{
+              &:hover {
                 background-color: transparent;
                 color: navy;
               }
             }
-            .table{
-              .border{
+            .table {
+              .border {
                 background-color: rgba(0, 0, 128, 0.733);
                 color: white;
-                th{
+                th {
                   font-weight: 400;
                 }
               }
@@ -100,5 +100,4 @@
       }
     }
   }
-
 }
