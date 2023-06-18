@@ -23,7 +23,7 @@ function drawBlogs(array) {
                 </div>
                 <div class="card-item">
                   <p class="item-title">${element.blogTitle}</p>
-                  <p class="item-body">${element.blogContent}</p>
+                  <p class="item-body">${element.blogContent.slice(0, 15)}... <a href="blog-details.html?id=${element.id}" class= "text-primary">Read More</a></p>
                 </div>
               </div>
             </div>
@@ -51,8 +51,12 @@ function drawDoctors(array) {
                   <img class="w-100" src="${element.photo}" alt="doctor" />
                 </div>
                 <div class="doctor-about">
-                  <p class="doctor-name p-0 m-0">${element.firstName} ${element.lastName}</p>
-                  <p class="doctor-status p-0 m-0">${element.speciality}</p>
+                <p class="doctor-name p-0 m-0">${element.firstName} ${element.lastName}</p>             
+                <p class="doctor-status p-0 m-0">${element.speciality}</p>
+                <div class="d-flex gap-2 align-items-center">
+                <a href="" ><i class="fa-regular fa-star" style="color: #f5fbff;"></i></a>
+                <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-circle-info" style="color: #f5fbff;"></i></button>
+                </div>
                 </div>
               </div>
             </div>

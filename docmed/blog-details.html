@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <title>Blog</title>
+    <title>Blog-Details</title>
   </head>
   <body>
     <header>
@@ -70,7 +70,7 @@
               <ul class="m-0 p-0 header-ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Department</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li>
                   <a href=""
                     ><div class="dropdown">
@@ -264,7 +264,7 @@
     <section id="services">
       <div class="container">
         <div class="services">
-            <p class="text-light fs-1 fw-bold pb-0 mb-0">Blog</p>
+          <p class="text-light fs-1 fw-bold pb-0 mb-0">Blog Details</p>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb align-items-center">
               <li class="breadcrumb-item">
@@ -274,60 +274,19 @@
                 class="breadcrumb-item active services-item"
                 aria-current="page"
               >
-                Blog
+                Blog Details
               </li>
             </ol>
           </nav>
         </div>
       </div>
     </section>
-    <section id="blog">
+    <section id="department">
       <div class="container">
-        <div class="blog">
-          <div class="row">
-            <div class="col col-sm-12 col-lg-8">
-              <div class="blog-card">
-                <div class="card-top">
-                  <div class="img">
-                    <img class="w-100" src="./assets/images/single_blog_1.png" alt="blog-img" />
-                    <div class="date-div">
-                      <p class="fs-3 fw-bold m-0 pb-0 pt-2 number-p">15</p>
-                      <p class="date-mon fs-5">Jan</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body p-5">
-                  <a href="#"><p class="card-title">Google inks pact for new 35-storey office</p></a>
-                  <p class="card-parag">
-                    That dominion stars lights dominion divide years for fourth
-                    have don't stars is that he earth it first without heaven in
-                    place seed it second morning saying.
-                  </p>
-                  <div class="sort-comment">
-                    <a href="#"><span><i class="fa-solid fa-user" style="color: gray;"></i> Travel, Life Style</span></a>  |  
-                    <a href="#"><span><i class="fa-solid fa-comments" style="color: #53585f;"></i> 03 Comments</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-sm-12 col-lg-6">
-              <div class="search-blog p-5 d-flex flex-column gap-3">
-                <div class="input-group flex-nowrap">
-                  <input type="text" class="form-control search-input shadow-none" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
-                </div>
-                <div class="dropdown drop-div d-flex flex-column">
-                  <button class="btn btn-filter dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Filter
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">A-Z</a></li>
-                    <li><a class="dropdown-item" href="#">Z-A</a></li>
-                    <li><a class="dropdown-item" href="#">Default</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="department d-flex">
+          <div class="row card-blog">
+        </div>
+        
         </div>
       </div>
     </section>
@@ -342,5 +301,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./assets/js/blog.js"></script>
   </body>
 </html>
