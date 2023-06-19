@@ -13,7 +13,7 @@ async function getAllBlogs() {
 
   function drawBlogs(element) {
       blogs.innerHTML = `
-      <div class="col col-sm-12 col-md-6 col-lg-8 p-3 mb-3">
+      <div  class="col col-sm-12 col-md-6 col-lg-8 p-3 mb-3">
                 <div class="department-card">
                   <div class="img">
                     <img class="w-100" src="${element.photo}" alt="" />

@@ -14,9 +14,15 @@
     },
     {
       "firstName": "Dr. Mirazul",
-      "email": "liam@gmail.com",
+      "email": "mirazul@gmail.com",
       "password": 123458,
       "id": 3
+    },
+    {
+      "firstName": "Dr. Mirazul",
+      "email": "new@gmail.com",
+      "password": 898989,
+      "id": 5
     },
     {
       "firstName": "Fidan",

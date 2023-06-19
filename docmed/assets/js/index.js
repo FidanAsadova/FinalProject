@@ -3,11 +3,11 @@ let BASE_URL_users = "http://localhost:8080/users";
 let doctors = document.querySelector(".card-doctor");
 let drSearch = document.querySelector("#search");
 let drLoad = document.querySelector("#load");
-let loginBtn = document.querySelector(".login-btn");
+let form = document.querySelector(".login-form");
 let loginEmail = document.querySelector(".login-email");
 let loginPassword = document.querySelector(".login-password");
 let num = 4;
-let btnSignUp = document.querySelector(".signup-login-btn")
+let btnSignUp = document.querySelector(".signup-login-btn");
 
 ////DOCTORS
 
@@ -61,32 +61,27 @@ drSearch.addEventListener("input", async function (e) {
 
 ///login
 
-
-// loginBtn.addEventListener("click", async function () {
-//   let res = await axios.get(BASE_URL_users);
-//   let data = res.data;
-//   data.find((user) => {
-//     if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
-//       window.location = `/docmed/admin-panel/admin.html`;
-//     } else if(data.find((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
-//       window.location = `index.html`;
-//       // btnSignUp.style.display="none"
-//     } else{
-//       alert("Pls Sign Up!")
-//     }
-//   });
-// });
-// let usersData = JSON.parse(localStorage.getItem("usersData")) || [];
-
-loginBtn.addEventListener("click", async function () {
+form.addEventListener("submit", async function () {
   let res = await axios.get(BASE_URL_users);
   let data = res.data;
   data.find((user) => {
-    if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
+    if (
+      user.isAdmin &&
+      loginEmail.value == "fidan@gmail.com" &&
+      loginPassword.value == 467626
+    ) {
       window.location = `/docmed/admin-panel/admin.html`;
-    } else if(data.filter((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
-      window.location = `user-acc.html`;
-      alert("Pls Sign Up!")
+    } else if (
+      data.find(
+        (user) =>
+          user.email == loginEmail.value && user.password == loginPassword.value
+      )
+    ) {
+      window.location = `/docmed/user-acc.html`;
+    } else {
+      alert(
+        "Your account does not exist on the site. Please create new account!"
+      );
     }
   });
 });

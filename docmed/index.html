@@ -344,11 +344,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body ps-5 pe-5">
-                    <form class="row">
-                      <!-- <div class="mb-3">
-                        <label for="validationDefault01" class="form-label">Name</label>
-                        <input type="text" class="form-control shadow-sm" id="validationDefault01" required>
-                      </div> -->
+                    <form class="row login-form">
                       <div class="mb-3">
                         <label for="email-log" class="form-label">Email</label>
                     <input type="email" class="form-control shadow-sm login-email" id="email-log" required>
@@ -444,7 +440,8 @@
       <div id="hero-services">
         <div class="container">
           <div class="hero-services row">
-            <div  class="col col-sm-12 col-md-4">
+            <div data-aos-duration="1000"
+            data-aos-delay="100" data-aos="zoom-in" class="col col-sm-12 col-md-4">
               <div class="hero-card-icon">
                 <div class="hero-card-head">
                   <i
@@ -462,7 +459,8 @@
                 <a href="#" class="btn-card btn">Apply For A Bed</a>
               </div>
             </div>
-            <div  class="col col-sm-12 col-md-4 primary-bg">
+            <div data-aos-duration="1000"
+            data-aos-delay="100" data-aos="zoom-in" class="col col-sm-12 col-md-4 primary-bg">
               <div class="hero-card-icon">
                 <div class="hero-card-head">
                   <i
@@ -480,7 +478,8 @@
                 <a href="#" class="btn-card btn">+10 672 356 3567</a>
               </div>
             </div>
-            <div class="col col-sm-12 col-md-4">
+            <div data-aos-duration="1000"
+            data-aos-delay="100" data-aos="zoom-in" class="col col-sm-12 col-md-4">
               <div class="hero-card-icon">
                 <div class="hero-card-head">
                   <i
@@ -506,13 +505,15 @@
       <div class="container">
         <div class="about">
           <div class="row">
-            <div class="img-about col col-sm-12 col-md-12 col-lg-6">
+            <div data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="100" class="img-about col col-sm-12 col-md-12 col-lg-6">
               <div class="img">
                 <img class="left-img" src="./assets/images/1.png" alt="" />
                 <img class="right-img" src="./assets/images/2 (2).png" alt="" />
               </div>
             </div>
-            <div class="info-about col col-sm-12 col-md-12 col-lg-6">
+            <div data-aos="fade-left" data-aos-duration="1000"
+            data-aos-delay="100" class="info-about col col-sm-12 col-md-12 col-lg-6">
               <div class="info ms-5">
                 <div class="info-title">
                   <p class="p-welcome">Welcome to Docmed</p>
@@ -566,7 +567,8 @@
               luckily or picture placing drawing.
             </p>
           </div>
-          <div class="row card-blog">
+          <div data-aos="fade-up"
+          data-aos-duration="3000"0 class="row card-blog">
             <!-- <div class="col col-sm-12 col-md-6 col-lg-4 p-3 mb-3 mt-3">
               <div class="department-card">
                 <div class="img">
@@ -861,6 +863,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <script src="./assets/js/department.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
