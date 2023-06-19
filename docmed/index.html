@@ -307,7 +307,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body ps-5 pe-5">
-                    <form class="row ">
+                    <!-- form -->
+                    <form id="form-sign-up" class="row ">
                       <div class="mb-3">
                         <label for="name" class="form-label">First name</label>
                         <input type="text" class="form-control shadow-sm" id="name" required>
@@ -326,8 +327,10 @@
                           Agree to terms and conditions
                         </label>
                       </div>
-                      <button type="submit" class="btn btn-primary header-btn">Sign Up</button>
+                      <button type="submit" class="btn btn-primary header-btn signup-btn">Sign Up</button>
                     </form>
+
+                    <!-- form-end -->
                   </div>
                   <div class="modal-footer d-flex gap-1">
                     <p>Already have an account?</p>
@@ -869,5 +872,6 @@
     <script>AOS.init()</script>
     <script src="./assets/js/department.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/sign-up.js"></script>
   </body>
 </html>

@@ -24,6 +24,12 @@
       "password": "678901",
       "id": 4,
       "isAdmin": true
+    },
+    {
+      "firstName": "Tarik",
+      "email": "dahyhorili@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 6
     }
   ],
   "doctors": [
