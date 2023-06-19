@@ -7,7 +7,7 @@ let loginBtn = document.querySelector(".login-btn");
 let loginEmail = document.querySelector(".login-email");
 let loginPassword = document.querySelector(".login-password");
 let num = 4;
-
+let btnSignUp = document.querySelector(".signup-login-btn")
 
 ////DOCTORS
 
@@ -65,11 +65,26 @@ drSearch.addEventListener("input", async function (e) {
 //   let res = await axios.get(BASE_URL_users);
 //   let data = res.data;
 //   data.find((user) => {
-//     if (
-//       loginEmail.value == "fidan@gmail.com" &&
-//       loginPassword.value == 654321
-//     ) {
-//       window.location = `../../admin-panel/admin.html`;
+//     if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
+//       window.location = `/docmed/admin-panel/admin.html`;
+//       alert("welcome!")
+//     } else {
+//       window.location = `index.html`;
 //     }
 //   });
 // });
+
+loginBtn.addEventListener("click", async function () {
+  let res = await axios.get(BASE_URL_users);
+  let data = res.data;
+  data.find((user) => {
+    if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
+      window.location = `/docmed/admin-panel/admin.html`;
+    } else if(data.find((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
+      window.location = `index.html`;
+      btnSignUp.style.display="none"
+    } else{
+      alert("Pls Sign Up!")
+    }
+  });
+});

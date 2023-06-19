@@ -8,7 +8,7 @@
     },
     {
       "firstName": "Dr. Mirazul",
-      "email": "liam@gmail.com",
+      "email": "test123@gmail.com",
       "password": 123457,
       "id": 2
     },
@@ -21,7 +21,7 @@
     {
       "firstName": "Fidan",
       "email": "fidan@gmail.com",
-      "password": 654321,
+      "password": 467626,
       "id": 4,
       "isAdmin": true
     }
