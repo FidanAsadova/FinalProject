@@ -1,43 +1,13 @@
-let BASE_URL_blog = "http://localhost:8080/blog";
 let BASE_URL_doctor = "http://localhost:8080/doctors";
-let blogs = document.querySelector(".card-blog");
+let BASE_URL_users = "http://localhost:8080/users";
 let doctors = document.querySelector(".card-doctor");
 let drSearch = document.querySelector("#search");
 let drLoad = document.querySelector("#load");
+let loginBtn = document.querySelector(".login-btn");
+let loginEmail = document.querySelector(".login-email");
+let loginPassword = document.querySelector(".login-password");
 let num = 4;
 
-///BLOG
-async function getAllBlogs() {
-  let res = await axios.get(BASE_URL_blog);
-  let data = res.data;
-  console.log(data);
-  drawBlogs(data);
-}
-getAllBlogs();
-
-function drawBlogs(array) {
-  blogs.innerHTML = "";
-  array.forEach((element) => {
-    blogs.innerHTML += `
-    <div class="col col-sm-12 col-md-6 col-lg-4 p-3 mb-3 mt-3">
-              <div class="department-card">
-                <div class="img">
-                  <img class="w-100" src="${element.photo}" alt="" />
-                </div>
-                <div class="card-item">
-                  <p class="item-title">${element.blogTitle}</p>
-                  <p class="item-body">${element.blogContent.slice(
-                    0,
-                    45
-                  )}... <a href="blog-details.html?id=${
-      element.id
-    }" class= "text-primary">Read More</a></p>
-                </div>
-              </div>
-            </div>
-    `;
-  });
-}
 
 ////DOCTORS
 
@@ -86,5 +56,20 @@ drSearch.addEventListener("input", async function (e) {
       .toLocaleLowerCase()
       .includes(e.target.value.toLocaleLowerCase());
   });
-  drawDoctors(searchTitle)
+  drawDoctors(searchTitle);
 });
+
+///login
+
+// loginBtn.addEventListener("click", async function () {
+//   let res = await axios.get(BASE_URL_users);
+//   let data = res.data;
+//   data.find((user) => {
+//     if (
+//       loginEmail.value == "fidan@gmail.com" &&
+//       loginPassword.value == 654321
+//     ) {
+//       window.location = `../../admin-panel/admin.html`;
+//     }
+//   });
+// });
