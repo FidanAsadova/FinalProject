@@ -17,6 +17,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>Docmed</title>
   </head>
@@ -298,6 +299,81 @@
                 </div>
               </div>
             </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalToggleLabel">Sign Up!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body ps-5 pe-5">
+                    <form class="row ">
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">First name</label>
+                        <input type="text" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary header-btn">Sign Up</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex gap-1">
+                    <p>Already have an account?</p>
+                    <button class="btn text-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body ps-5 pe-5">
+                    <form class="row">
+                      <!-- <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Name</label>
+                        <input type="text" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div> -->
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-sm" id="validationDefault01" required>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary header-btn">Login</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex gap-1">
+                    <p>Don't have an account?</p>
+                    <button class="btn text-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Go Sign Up!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="m-0 p-0" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fa-solid fa-user-plus" style="color: #00A9FF;"></i></a>
           </div>
         </div>
       </div>
@@ -368,7 +444,7 @@
       <div id="hero-services">
         <div class="container">
           <div class="hero-services row">
-            <div class="col col-sm-12 col-md-4">
+            <div  class="col col-sm-12 col-md-4">
               <div class="hero-card-icon">
                 <div class="hero-card-head">
                   <i
@@ -386,7 +462,7 @@
                 <a href="#" class="btn-card btn">Apply For A Bed</a>
               </div>
             </div>
-            <div class="col col-sm-12 col-md-4 primary-bg">
+            <div  class="col col-sm-12 col-md-4 primary-bg">
               <div class="hero-card-icon">
                 <div class="hero-card-head">
                   <i
@@ -781,6 +857,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

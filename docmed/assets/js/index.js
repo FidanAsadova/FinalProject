@@ -23,7 +23,7 @@ function drawBlogs(array) {
                 </div>
                 <div class="card-item">
                   <p class="item-title">${element.blogTitle}</p>
-                  <p class="item-body">${element.blogContent.slice(0, 15)}... <a href="blog-details.html?id=${element.id}" class= "text-primary">Read More</a></p>
+                  <p class="item-body">${element.blogContent.slice(0, 45)}... <a href="blog-details.html?id=${element.id}" class= "text-primary">Read More</a></p>
                 </div>
               </div>
             </div>

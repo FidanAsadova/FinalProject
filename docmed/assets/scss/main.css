@@ -156,13 +156,29 @@ header #bottom-header .container .bottom-header #menu-burger .container .menu-bu
   }
 }
 #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn {
-  padding: 15px 40px;
-  margin-top: 20px;
+  /* padding: 15px 40px;
+  margin-top: 20px; */
+  padding: 10px 20px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 40px;
+  font-weight: 400;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+  font-family: "Poppins", sans-serif;
 }
 #hero-banner #carouselExampleIndicators .carousel-inner .carousel-item .container .row .col .carousel-caption .hero-btn:hover {
-  background-color: #fff;
+  /* background-color: transparent;
   border: 1px solid #009dff;
-  color: #009dff;
+  color: #009dff; */
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 40px rgb(0,140,255),
+              0 0 90px rgb(0,140,255);
 }
 #hero-banner #hero-services {
   background-color: #83c4ff;
