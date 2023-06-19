@@ -61,18 +61,22 @@ drSearch.addEventListener("input", async function (e) {
 
 ///login
 
+
 // loginBtn.addEventListener("click", async function () {
 //   let res = await axios.get(BASE_URL_users);
 //   let data = res.data;
 //   data.find((user) => {
 //     if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
 //       window.location = `/docmed/admin-panel/admin.html`;
-//       alert("welcome!")
-//     } else {
+//     } else if(data.find((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
 //       window.location = `index.html`;
+//       // btnSignUp.style.display="none"
+//     } else{
+//       alert("Pls Sign Up!")
 //     }
 //   });
 // });
+// let usersData = JSON.parse(localStorage.getItem("usersData")) || [];
 
 loginBtn.addEventListener("click", async function () {
   let res = await axios.get(BASE_URL_users);
@@ -80,10 +84,8 @@ loginBtn.addEventListener("click", async function () {
   data.find((user) => {
     if (user.isAdmin && loginEmail.value=="fidan@gmail.com" && loginPassword.value==467626) {
       window.location = `/docmed/admin-panel/admin.html`;
-    } else if(data.find((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
-      window.location = `index.html`;
-      btnSignUp.style.display="none"
-    } else{
+    } else if(data.filter((user)=>user.email==loginEmail.value && user.password==loginPassword.value)){
+      window.location = `user-acc.html`;
       alert("Pls Sign Up!")
     }
   });
