@@ -2,6 +2,9 @@ let BASE_URL_blog = "http://localhost:8080/blog";
 let BASE_URL_doctor = "http://localhost:8080/doctors";
 let blogs = document.querySelector(".card-blog");
 let doctors = document.querySelector(".card-doctor");
+let drSearch = document.querySelector("#search");
+let drLoad = document.querySelector("#load");
+let num = 4;
 
 ///BLOG
 async function getAllBlogs() {
@@ -23,7 +26,12 @@ function drawBlogs(array) {
                 </div>
                 <div class="card-item">
                   <p class="item-title">${element.blogTitle}</p>
-                  <p class="item-body">${element.blogContent.slice(0, 45)}... <a href="blog-details.html?id=${element.id}" class= "text-primary">Read More</a></p>
+                  <p class="item-body">${element.blogContent.slice(
+                    0,
+                    45
+                  )}... <a href="blog-details.html?id=${
+      element.id
+    }" class= "text-primary">Read More</a></p>
                 </div>
               </div>
             </div>
@@ -43,7 +51,7 @@ getAllDoctors();
 
 function drawDoctors(array) {
   doctors.innerHTML = "";
-  array.forEach((element) => {
+  array.slice(0, num).forEach((element) => {
     doctors.innerHTML += `
     <div class="col col-sm-12 col-md-6 col-lg-3 mt-1 mb-1 pt-2 pb-2">
               <div class="doctor">
@@ -63,3 +71,9 @@ function drawDoctors(array) {
     `;
   });
 }
+
+drLoad.addEventListener("click", async function (e) {
+  e.preventDefault();
+  num = num + 4;
+  getAllDoctors();
+});
