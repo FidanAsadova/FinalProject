@@ -68,7 +68,7 @@ form.addEventListener("submit", async function () {
     if (
       user.isAdmin &&
       loginEmail.value == "fidan@gmail.com" &&
-      loginPassword.value == 467626
+      loginPassword.value == 678901
     ) {
       window.location = `/docmed/admin-panel/admin.html`;
     } else if (

@@ -2,12 +2,6 @@
   "users": [
     {
       "firstName": "Dr. Mirazul",
-      "email": "liam@gmail.com",
-      "password": 123456,
-      "id": 1
-    },
-    {
-      "firstName": "Dr. Mirazul",
       "email": "test123@gmail.com",
       "password": 123457,
       "id": 2
@@ -27,7 +21,7 @@
     {
       "firstName": "Fidan",
       "email": "fidan@gmail.com",
-      "password": 467626,
+      "password": 678901,
       "id": 4,
       "isAdmin": true
     }
@@ -197,13 +191,13 @@
       "offerSubject": "Lorem Ipsum dolar Lorem Ipsum dolar Lorem Ipsum dolar Lorem Ipsum dolar",
       "name": "lorem",
       "email": "liam@gmail.com",
-      "id": 2
+      "id": 3
     },
     {
       "offerSubject": "Lorem Ipsum dolar Lorem Ipsum dolar Lorem Ipsum dolar Lorem Ipsum dolar",
-      "name": "lorem",
-      "email": "liam@gmail.com",
-      "id": 3
+      "name": "ipsummm",
+      "email": "loarrr@gmail.com",
+      "id": 4
     }
   ]
 }
