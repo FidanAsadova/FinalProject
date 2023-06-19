@@ -3,25 +3,25 @@
     {
       "firstName": "Dr. Mirazul",
       "email": "test123@gmail.com",
-      "password": 123457,
+      "password": "123457",
       "id": 2
     },
     {
       "firstName": "Dr. Mirazul",
       "email": "mirazul@gmail.com",
-      "password": 123458,
+      "password": "123458",
       "id": 3
     },
     {
       "firstName": "Dr. Mirazul",
       "email": "new@gmail.com",
-      "password": 898989,
+      "password": "898989",
       "id": 5
     },
     {
       "firstName": "Fidan",
       "email": "fidan@gmail.com",
-      "password": 678901,
+      "password": "678901",
       "id": 4,
       "isAdmin": true
     }

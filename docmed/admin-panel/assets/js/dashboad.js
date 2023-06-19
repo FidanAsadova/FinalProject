@@ -24,7 +24,8 @@ function drawUsers(array) {
     <tr>
                         <td>${user.firstName}</td>
                         <td>${user.email}</td>
-                        <td>${user.password}</td>
+                        <td>${user.password.split``.fill("*", 0, user.password.length - 2)
+                        .join``}</td>
                         
                       </tr>
     `;
