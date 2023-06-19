@@ -33,9 +33,10 @@ function drawDoctors(array) {
                 <p class="doctor-status p-0 m-0">${element.speciality}</p>
                 <div class="d-flex gap-2 align-items-center">
                 <a href="" ><i class="fa-regular fa-star" style="color: #f5fbff;"></i></a>
-                <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-circle-info" style="color: #f5fbff;"></i></button>
+                <a href=""><i class="fa-solid fa-circle-info" style="color: #f5fbff;"></i></a>
                 </div>
                 </div>
+                
               </div>
             </div>
     `;

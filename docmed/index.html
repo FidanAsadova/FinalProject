@@ -129,34 +129,38 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <h3 class="d-flex flex-column align-items-center pt-5 text-primary">Welcome!</h3>
+                  <h3 class="d-flex flex-column align-items-center pt-1 text-primary">Welcome!</h3>
                   <div class="modal-body p-4">
-                    <form class="row g-3">
+                    <form id="form-appoiment" class="row g-3">
                       <div class="col-md-6">
-                        <label for="validationDefault06" class="form-label">Photo</label>
-                        <input type="text" class="form-control" id="validationDefault06" required>
+                        <label for="app-photo" class="form-label">Photo</label>
+                        <input type="file" class="form-control" id="app-photo" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="validationDefault01" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="validationDefault01" required>
+                        <label for="email-app" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email-app" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="name-app" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name-app" required>
                       </div>
                       <div class="col-md-6">
                         <label for="validationDefault02" class="form-label">Date</label>
                         <input type="date" class="form-control" id="validationDefault02" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="validationDefault03" class="form-label">Number</label>
-                        <input type="number" class="form-control" id="validationDefault03" required>
+                        <label for="num-app" class="form-label">Number</label>
+                        <input type="number" class="form-control" id="num-app" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="validationDefaultDoctor" class="form-label">Doctor</label>
+                        <label for="doc-app" class="form-label">Doctor</label>
                         <div class="input-group">
-                          <input type="text" class="form-control" id="validationDefaultDoctor"  aria-describedby="inputGroupPrepend2" required>
+                          <input type="text" class="form-control" id="doc-app"  aria-describedby="inputGroupPrepend2" required>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <label for="validationDefault05" class="form-label">Injury/Condition</label>
-                        <input type="text" class="form-control" id="validationDefault05" required>
+                        <label for="injury-app" class="form-label">Injury/Condition</label>
+                        <input type="text" class="form-control" id="injury-app" required>
                       </div>
                       <div class="col-12">
                         <div class="form-check">
@@ -167,91 +171,9 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <button class="btn btn-success" type="submit">Confirm</button>
+                        <button id="btn-app" class="btn btn-success" type="submit">Confirm</button>
                       </div>
                     </form>
-                    <!-- <form action="">
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Pick Date"
-                            class="form-control shadow-sm"
-                            type="date"
-                          />
-                        </div>
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Pick Date"
-                            class="form-control shadow-sm"
-                            type="date"
-                          />
-                        </div>
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <select
-                            required
-                            class="form-control shadow-sm"
-                            name="select-department"
-                            id="select-department"
-                          >
-                            <option value="department">Department</option>
-                            <option value="eye-care">Eye Care</option>
-                            <option value="dental-care">Dental Care</option>
-                            <option value="physical-therapy">
-                              Physical Therapy
-                            </option>
-                          </select>
-                        </div>
-                        <div class="col col-6">
-                          <select
-                            required
-                            class="form-control shadow-sm"
-                            name="input-doctor"
-                            id="input-doctor"
-                          >
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Name"
-                            class="form-control shadow-sm"
-                            type="text"
-                          />
-                        </div>
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Phone no."
-                            class="form-control shadow-sm"
-                            type="text"
-                          />
-                        </div>
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col col-12">
-                          <input
-                            required
-                            placeholder="Email"
-                            class="form-control shadow-sm"
-                            type="email"
-                          />
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn header-btn w-100">
-                          Confirm
-                        </button>
-                      </div>
-                    </form> -->
                   </div>
                 </div>
               </div>
@@ -718,6 +640,7 @@
           </div>
           <div data-aos="fade-up"
           data-aos-duration="3000" class="row card-doctor">
+          
             <!-- <div class="col col-sm-12 col-md-6 col-lg-3 mt-1 mb-1 pt-2 pb-2">
               <div class="doctor">
                 <div class="img">
@@ -868,6 +791,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./assets/js/appointment.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init()</script>
     <script src="./assets/js/department.js"></script>
