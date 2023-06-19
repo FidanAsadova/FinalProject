@@ -77,3 +77,14 @@ drLoad.addEventListener("click", async function (e) {
   num = num + 4;
   getAllDoctors();
 });
+
+drSearch.addEventListener("input", async function (e) {
+  let res = await axios.get(BASE_URL_doctor);
+  let data = await res.data;
+  let searchTitle = data.filter((item) => {
+    return `${item.firstName} ${item.lastName} ${item.speciality}`
+      .toLocaleLowerCase()
+      .includes(e.target.value.toLocaleLowerCase());
+  });
+  drawDoctors(searchTitle)
+});

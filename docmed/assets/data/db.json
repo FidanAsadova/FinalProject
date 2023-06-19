@@ -29,10 +29,10 @@
   "doctors": [
     {
       "photo": "https://preview.colorlib.com/theme/docmed/img/experts/4.png",
-      "firstName": "Dr. Mirazul",
+      "firstName": "Dr. Rashid",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Dermatology",
       "number": "0126596578",
       "id": 1
     },
@@ -41,13 +41,13 @@
       "firstName": "Dr. Sophia",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Pediatrics",
       "number": "0126596578",
       "id": 2
     },
     {
       "photo": "https://preview.colorlib.com/theme/docmed/img/experts/8.png",
-      "firstName": "Dr. Mirazul",
+      "firstName": "Dr. Cavin",
       "lastName": "Alom",
       "gender": "Male",
       "speciality": "Neurologist",
@@ -56,19 +56,19 @@
     },
     {
       "photo": "https://preview.colorlib.com/theme/docmed/img/experts/9.png",
-      "firstName": "Dr. Mirazul",
+      "firstName": "Dr. Mark",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Cardiology",
       "number": "0126596578",
       "id": 4
     },
     {
       "photo": "https://preview.colorlib.com/theme/docmed/img/experts/6.png",
-      "firstName": "Dr. Mirazul",
+      "firstName": "Dr. Trump",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Gastroenterology",
       "number": "0126596578",
       "id": 5
     },
@@ -77,7 +77,7 @@
       "firstName": "Dr. Mirazul",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Radiology",
       "number": "0126596578",
       "id": 6
     },
@@ -95,7 +95,7 @@
       "firstName": "Dr. Mirazul",
       "lastName": "Alom",
       "gender": "Male",
-      "speciality": "Neurologist",
+      "speciality": "Ophthalmology",
       "number": "0126596578",
       "id": 8
     }
