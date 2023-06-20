@@ -18,10 +18,7 @@ function drawDoctor(array) {
                           <img class="rounded w-25" src="${doctor.imgUrl}" alt="..." />
                         </div></th>
                         <td>${doctor.firstName}</td>
-                        <td>${doctor.lastName}</td>
-                        <td>${doctor.gender}</td>
                         <td>${doctor.speciality}</td>
-                        <td>${doctor.number}</td>
                         <td>
                           <div class="btns d-flex justify-content-around">
                             <a href="doctor-form.html?id=${doctor.id}"
@@ -36,6 +33,7 @@ function drawDoctor(array) {
                                 style="color: darkred"
                               ></i
                             ></a>
+                            <a href="doctor-details.html?id=${doctor.id}"><i class="fa-solid fa-circle-info" style="color: #513a1f;"></i></a>
                           </div>
                         </td>
                       </tr>

@@ -9,6 +9,7 @@ let docSpec = document.querySelector("#doc-sp");
 let docNum = document.querySelector("#doc-num");
 let btnDoc = document.querySelector("#doc-btn");
 let base64;
+let doctoUserTitle = document.querySelector(".doctor-user-name");
 
 async function getDocById() {
   let res = await axios(`${BASE_URL_Dr}/${id}`);
@@ -24,6 +25,18 @@ async function getDocById() {
 }
 
 getDocById();
+
+async function titleDoc() {
+  let res = await axios(`${BASE_URL_Dr}/${id}`);
+  let data = res.data;
+  if (id) {
+    doctoUserTitle.innerText = `Doctor ${data.firstName} Details`;
+    btnDoc.innerText = "Edit";
+  } else {
+    doctoUserTitle.innerText = "Add Doctor";
+  }
+}
+titleDoc();
 
 function createdDr() {
   formDr.addEventListener("submit", async function (e) {
