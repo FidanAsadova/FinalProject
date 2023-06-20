@@ -79,8 +79,8 @@ function loginFormFunc() {
     data.find((user) => {
       if (
         user.isAdmin &&
-        loginEmail.value === "fidanasadova@gmail.com" &&
-        loginPassword.value === "fidan2023"
+        loginEmail.value === "fidan32@gmail.com" &&
+        loginPassword.value === "fidan32"
       ) {
         return (window.location = `/docmed/admin-panel/admin.html`);
       } else if (

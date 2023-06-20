@@ -17,6 +17,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>About Us</title>
   </head>
@@ -89,8 +90,13 @@
                         class="dropdown-menu border-0 shadow-sm rounded-0"
                         aria-labelledby="dropdownMenuLink"
                       >
-                        <li><a class="dropdown-item" href="#">About</a></li>
-                        <li><a class="dropdown-item" href="#">Favorite</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">About</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="fav.html">Favorite</a>
+                        </li>
+                        <!-- <li><a class="dropdown-item" href="admin-panel/admin.html">Admin</a></li> -->
                       </ul>
                     </div></a
                   >
@@ -115,7 +121,7 @@
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog w-100">
+              <div class="modal-dialog w-100 mt-5 p-2">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button
@@ -125,87 +131,49 @@
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
-                    <form action="">
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Pick Date"
-                            class="form-control shadow-sm"
-                            type="date"
-                          />
-                        </div>
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Pick Date"
-                            class="form-control shadow-sm"
-                            type="date"
-                          />
+                  <h3 class="d-flex flex-column align-items-center pt-1 text-primary">Welcome!</h3>
+                  <div class="modal-body p-4">
+                    <form id="form-appoiment" class="row g-3">
+                      <div class="col-md-6">
+                        <label for="app-photo" class="form-label">Photo</label>
+                        <input type="file" class="form-control" id="app-photo" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="email-app" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email-app" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="name-app" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name-app" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationDefault02" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="validationDefault02" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="num-app" class="form-label">Number</label>
+                        <input type="number" class="form-control" id="num-app" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="doc-app" class="form-label">Doctor</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="doc-app"  aria-describedby="inputGroupPrepend2" required>
                         </div>
                       </div>
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <select
-                            required
-                            class="form-control shadow-sm"
-                            name="select-department"
-                            id="select-department"
-                          >
-                            <option value="department">Department</option>
-                            <option value="eye-care">Eye Care</option>
-                            <option value="dental-care">Dental Care</option>
-                            <option value="physical-therapy">
-                              Physical Therapy
-                            </option>
-                          </select>
-                        </div>
-                        <div class="col col-6">
-                          <select
-                            required
-                            class="form-control shadow-sm"
-                            name="input-doctor"
-                            id="input-doctor"
-                          >
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                            <option value="mirazul-allom">Mirazul Allom</option>
-                          </select>
+                      <div class="col-md-6">
+                        <label for="injury-app" class="form-label">Injury/Condition</label>
+                        <input type="text" class="form-control" id="injury-app" required>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                          <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                          </label>
                         </div>
                       </div>
-                      <div class="row mb-4">
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Name"
-                            class="form-control shadow-sm"
-                            type="text"
-                          />
-                        </div>
-                        <div class="col col-6">
-                          <input
-                            required
-                            placeholder="Phone no."
-                            class="form-control shadow-sm"
-                            type="text"
-                          />
-                        </div>
-                      </div>
-                      <div class="row mb-4">
-                        <div class="col col-12">
-                          <input
-                            required
-                            placeholder="Email"
-                            class="form-control shadow-sm"
-                            type="email"
-                          />
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="submit" class="btn header-btn w-100">
-                          Confirm
-                        </button>
+                      <div class="col-12">
+                        <button id="btn-app" class="btn btn-success" type="submit">Confirm</button>
                       </div>
                     </form>
                   </div>
@@ -222,7 +190,7 @@
                     data-bs-target="#offcanvasWithBackdrop"
                     aria-controls="offcanvasWithBackdrop"
                   >
-                  <i class="fa-solid fa-bars" style="color: #1c5fd4;"></i>
+                    <i class="fa-solid fa-bars" style="color: #1c5fd4"></i>
                   </button>
                   <div
                     class="offcanvas offcanvas-start"
@@ -241,10 +209,10 @@
                     <div class="offcanvas-body">
                       <nav class="burger-menu">
                         <ul class="m-0 p-0 burger">
-                          <li><a href="index.html">Home</a></li>
+                          <li><a href="#">Home</a></li>
                           <li><a href="services.html">Department</a></li>
                           <li><a href="blog.html">Blog</a></li>
-                          <li><a href="#">About</a></li>
+                          <li><a href="aboutUs.html">About</a></li>
                           <li><a href="#">Favorite</a></li>
                           <li><a href="doctors.html">Doctors</a></li>
                           <li><a href="contact.html">Contact</a></li>
@@ -255,10 +223,84 @@
                 </div>
               </div>
             </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalToggleLabel">Sign Up!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body ps-5 pe-5">
+                    <!-- form -->
+                    <form id="form-sign-up" class="row ">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">First name</label>
+                        <input type="text" class="form-control shadow-sm" id="name" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-sm" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-sm" id="password" required>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="signup-check" required>
+                        <label class="form-check-label" for="signup-check">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary header-btn signup-btn">Sign Up</button>
+                    </form>
+
+                    <!-- form-end -->
+                  </div>
+                  <div class="modal-footer d-flex gap-1">
+                    <p>Already have an account?</p>
+                    <button class="btn text-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body ps-5 pe-5">
+                    <!-- login form -->
+                    <form class="row login-form">
+                      <div class="mb-3">
+                        <label for="email-log" class="form-label">Email</label>
+                    <input type="email" class="form-control shadow-sm login-email" id="email-log" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="pass-log" class="form-label">Password</label>
+                    <input type="password" class="form-control shadow-sm login-password" id="pass-log" required>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="check-log" required>
+                        <label class="form-check-label" for="check-log">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary header-btn login-btn">Login</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer d-flex gap-1">
+                    <p>Don't have an account?</p>
+                    <button class="btn text-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Go Sign Up!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="m-0 p-0 signup-login-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i class="fa-solid fa-user-plus" style="color: #00A9FF;"></i></a>
           </div>
         </div>
       </div>
-      
     </header>
     <section id="services">
       <div class="container">
@@ -277,13 +319,15 @@
       <div class="container">
         <div class="about">
           <div class="row">
-            <div class="img-about col col-sm-12 col-md-12 col-lg-6">
+            <div data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="100" class="img-about col col-sm-12 col-md-12 col-lg-6">
               <div class="img">
                 <img class="left-img" src="./assets/images/1.png" alt="" />
                 <img class="right-img" src="./assets/images/2 (2).png" alt="" />
               </div>
             </div>
-            <div class="info-about col col-sm-12 col-md-12 col-lg-6">
+            <div data-aos="fade-left" data-aos-duration="1000"
+            data-aos-delay="100" class="info-about col col-sm-12 col-md-12 col-lg-6">
               <div class="info ms-5">
                 <div class="info-title">
                   <p class="p-welcome">Welcome to Docmed</p>
@@ -386,7 +430,7 @@
             </div>
           </div>
         </div>
-        <div class="nav-feedbacks">
+        <!-- <div class="nav-feedbacks">
           <div class="container">
             <div class="tabs d-flex justify-content-center">
               <ul class="nav nav-tabs">
@@ -406,13 +450,14 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <section id="family-doctor">
         <div class="container">
           <div class="family-doctor">
             <div class="row mb-5">
-              <div class="col col-sm-12 col-lg-6">
+              <div data-aos-duration="1000"
+              data-aos-delay="100" data-aos="fade-down-right" class="col col-sm-12 col-lg-6">
                 <div class="family-info">
                   <span class="info-icon">
                     <i
@@ -428,7 +473,8 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-sm-12 col-lg-6">
+              <div data-aos-duration="1000"
+              data-aos-delay="100" data-aos="fade-down-left" class="col col-sm-12 col-lg-6">
                 <div class="img">
                   <img class="w-100" src="./assets/images/business.png" alt="" />
                 </div>
@@ -575,6 +621,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

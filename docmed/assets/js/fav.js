@@ -22,7 +22,7 @@ function drawFav(arr) {
                   <div class="doctor-about">
                   <p class="doctor-name p-0 m-0">${element.firstName}</p>             
                   <p class="doctor-status p-0 m-0">${element.speciality}</p>
-                  <a onclick="deleteFav(${element.id},this)"><i class="fa-solid fa-star" style="color: #ecdb18;"></i></a>
+                  <button class="btn" onclick="deleteFav(${element.id},this)"><i class="fa-solid fa-star" style="color: #ecdb18;"></i></button>
                   </div>
                   
                 </div>

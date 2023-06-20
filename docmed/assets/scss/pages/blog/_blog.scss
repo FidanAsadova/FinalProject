@@ -72,30 +72,30 @@
             }
           }
         }
-        .col-lg-4 {
-          .search-blog {
-            background-color: #fbf9ff;
-            .search-input {
-              height: 60px;
-              border: 1px solid gainsboro;
-              border-radius: 0%;
-            }
-            .drop-div {
-              .btn-filter {
-                @extend %primary-btn;
-                border-color: $info-color;
-                height: 60px;
-                font-size: 18px;
-                background-color: white;
-                color: $info-color;
-                &:hover {
-                  color: white;
-                  background-color: $info-color;
-                }
-              }
-            }
-          }
-        }
+        // .col-lg-4 {
+        //   .search-blog {
+        //     background-color: #fbf9ff;
+        //     .search-input {
+        //       height: 60px;
+        //       border: 1px solid gainsboro;
+        //       border-radius: 0%;
+        //     }
+        //     .drop-div {
+        //       .btn-filter {
+        //         @extend %primary-btn;
+        //         border-color: $info-color;
+        //         height: 60px;
+        //         font-size: 18px;
+        //         background-color: white;
+        //         color: $info-color;
+        //         &:hover {
+        //           color: white;
+        //           background-color: $info-color;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
   }
