@@ -1,3 +1,4 @@
+let id = new URLSearchParams(window.location.search).get("id");
 let BASE_URL_app = "http://localhost:8080/patients";
 let formApp = document.querySelector("#form-appoiment");
 let photo = document.querySelector("#app-photo");
@@ -9,6 +10,20 @@ let docApp = document.querySelector("#doc-app");
 let injuryApp = document.querySelector("#injury-app");
 let btnApp = document.querySelector("#btn-app");
 let base64;
+
+async function getPatientById() {
+  let res = await axios(`${BASE_URL_app}/${id}`);
+  let data = res.data;
+  console.log(data);
+
+  nameApp.value = data.name;
+  emailApp.value = data.email;
+  numberApp.value = data.number;
+  docApp.value = data.doctor;
+  injuryApp.value = data.condition;
+  photo = data.imgUrl;
+}
+getPatientById()
 
 function createdApp() {
   formApp.addEventListener("submit", async function (e) {
@@ -23,10 +38,18 @@ function createdApp() {
       doctor: docApp.value,
       condition: injuryApp.value,
     };
-    await axios.post(BASE_URL_app, app);
+
+    getPatientById()
+
+    if (id) {
+      await axios.patch(`${BASE_URL_app}/${id}`, app);
+    } else {
+      await axios.post(BASE_URL_app, app);
+    }
+    window.location.href="patient.html"
   });
 }
-createdApp();
+createdApp()
 
 const convertBase64 = (file) => {
   return new Promise((resolve, reject) => {

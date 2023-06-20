@@ -23,7 +23,7 @@ async function drawPatient(array) {
                         <td>${patient.condition}</td>
                         <td>
                           <div class="btns d-flex justify-content-around">
-                            <a href=""
+                            <a href="patient-form.html?id=${patient.id}"
                               ><i
                                 class="fa-regular fa-pen-to-square"
                                 style="color: navy"
