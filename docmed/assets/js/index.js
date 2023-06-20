@@ -62,27 +62,33 @@ drSearch.addEventListener("input", async function (e) {
 
 ///login
 
-form.addEventListener("submit", async function () {
-  let res = await axios.get(BASE_URL_users);
-  let data = res.data;
-  data.find((user) => {
-    if (
-      user.isAdmin &&
-      loginEmail.value == "fidan@gmail.com" &&
-      loginPassword.value == "678901"
-    ) {
-      window.location = `/docmed/admin-panel/admin.html`;
-    } else if (
-      data.find(
-        (user) =>
-          user.email == loginEmail.value && user.password == loginPassword.value
-      )
-    ) {
-      window.location = `/docmed/user-acc.html`;
-    } else {
-      alert(
-        "Your account does not exist on the site. Please create new account!"
-      );
-    }
+function loginFormFunc() {
+  form.addEventListener("submit", async function () {
+    let res = await axios.get(BASE_URL_users);
+    let data = res.data;
+    data.find((user) => {
+      if (
+        user.isAdmin &&
+        loginEmail.value === "fidanasadova@gmail.com" &&
+        loginPassword.value === "fidan2023"
+      ) {
+        return (window.location = `/docmed/admin-panel/admin.html`);
+      } else if (
+        data.find(
+          (user) =>
+            user.email === loginEmail.value &&
+            user.password === loginPassword.value
+        )
+      ) {
+        return (window.location = `/docmed/user-acc.html`);
+      } else {
+        // alert(
+        //   "Your account does not exist on the site. Please create new account!"
+        // );
+        window.location = `/docmed/error.html`;
+      }
+    });
   });
-});
+}
+
+loginFormFunc();

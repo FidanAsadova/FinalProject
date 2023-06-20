@@ -1,6 +1,13 @@
 {
   "users": [
     {
+      "isAdmin": true,
+      "firstName": "Fidan",
+      "email": "fidanasadova@gmail.com",
+      "password": "fidan2023",
+      "id": 4
+    },
+    {
       "firstName": "Dr. Mirazul",
       "email": "test123@gmail.com",
       "password": "123457",
@@ -19,17 +26,34 @@
       "id": 5
     },
     {
-      "firstName": "Fidan",
-      "email": "fidan@gmail.com",
-      "password": "678901",
-      "id": 4,
-      "isAdmin": true
-    },
-    {
       "firstName": "Tarik",
       "email": "dahyhorili@mailinator.com",
       "password": "Pa$$w0rd!",
       "id": 6
+    },
+    {
+      "firstName": "Eleanor",
+      "email": "ducibu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 7
+    },
+    {
+      "firstName": "Taylor",
+      "email": "fefo@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 8
+    },
+    {
+      "firstName": "Olympia",
+      "email": "qame@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 9
+    },
+    {
+      "firstName": "Nero",
+      "email": "syly@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 10
     }
   ],
   "doctors": [

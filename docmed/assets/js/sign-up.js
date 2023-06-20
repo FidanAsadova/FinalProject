@@ -15,6 +15,7 @@ function createdUser() {
       password: inputPassword.value,
     };
     await axios.post(BASE_URL, user);
+    window.location.href="/docmed/user-acc.html"
   });
 }
 createdUser();
