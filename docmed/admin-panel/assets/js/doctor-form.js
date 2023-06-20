@@ -1,3 +1,4 @@
+let id = new URLSearchParams(window.location.search).get("id");
 let BASE_URL_Dr = "http://localhost:8080/doctors";
 let photo = document.querySelector("#photo-doc");
 let formDr = document.querySelector(".doc-form");
@@ -9,12 +10,25 @@ let docNum = document.querySelector("#doc-num");
 let btnDoc = document.querySelector("#doc-btn");
 let base64;
 
-function createdDr() {
-    console.log("hhh");
-  formDr.addEventListener("submit", async function (e) {
-    console.log("kkkk");
+async function getDocById() {
+  let res = await axios(`${BASE_URL_Dr}/${id}`);
+  let data = res.data;
+  console.log(data);
 
+  docName.value = data.firstName;
+  docLastname.value = data.lastName;
+  docGender.value = data.gender;
+  docSpec.value = data.speciality;
+  docNum.value = data.number;
+  photo = data.imgUrl;
+}
+
+getDocById();
+
+function createdDr() {
+  formDr.addEventListener("submit", async function (e) {
     e.preventDefault();
+
     let doc = {
       imgUrl: base64,
       firstName: docName.value,
@@ -23,7 +37,13 @@ function createdDr() {
       speciality: docSpec.value,
       number: docNum.value,
     };
-    await axios.post(BASE_URL_Dr, doc);
+
+    if (id) {
+      await axios.patch(`${BASE_URL_Dr}/${id}`, doc);
+    } else {
+      await axios.post(BASE_URL_Dr, doc);
+    }
+    window.location.href = "doctor.html";
   });
 }
 createdDr();

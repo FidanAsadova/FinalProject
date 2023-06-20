@@ -24,7 +24,7 @@ function drawDoctor(array) {
                         <td>${doctor.number}</td>
                         <td>
                           <div class="btns d-flex justify-content-around">
-                            <a href=""
+                            <a href="doctor-form.html?id=${doctor.id}"
                               ><i
                                 class="fa-regular fa-pen-to-square"
                                 style="color: navy"
