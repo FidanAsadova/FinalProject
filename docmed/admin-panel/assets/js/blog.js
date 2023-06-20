@@ -25,7 +25,7 @@ async function drawBLogData(array) {
                         <td>${blog.blogContent}</td>
                         <td>
                           <div class="btns d-flex justify-content-around">
-                            <a href="blog-form.html"
+                            <a href="blog-form.html?id=${blog.id}"
                               ><i
                                 class="fa-regular fa-pen-to-square"
                                 style="color: navy"

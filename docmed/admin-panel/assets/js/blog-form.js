@@ -1,9 +1,21 @@
+let id = new URLSearchParams(window.location.search).get("id");
 let BASE_URL_Blog = "http://localhost:8080/blog";
 let formBlog = document.querySelector(".form-blog");
 let photo = document.querySelector("#blog-photo");
 let titleBlog = document.querySelector("#title-blog");
 let contentBlog = document.querySelector("#content-blog");
 let base64;
+
+async function getBlogById() {
+  let res = await axios(`${BASE_URL_Blog}/${id}`);
+  let data = res.data;
+  console.log(data);
+  
+  titleBlog.value = data.blogTitle;
+  contentBlog.value = data.blogContent;
+  photo = data.imgUrl;
+}
+getBlogById();
 
 function createdBlog() {
   formBlog.addEventListener("submit", async function (e) {
@@ -14,7 +26,12 @@ function createdBlog() {
       blogTitle: titleBlog.value,
       blogContent: contentBlog.value,
     };
-    await axios.post(BASE_URL_Blog, newBlog);
+    if (id) {
+      await axios.patch(`${BASE_URL_Blog}/${id}`, newBlog);
+    } else {
+      await axios.post(BASE_URL_Blog, newBlog);
+    }
+    window.location.href="blog.html"
   });
 }
 
