@@ -17,7 +17,7 @@ async function drawBLogData(array) {
                         <th scope="row">
                           <img
                             class="w-25"
-                            src="${blog.photo}"
+                            src="${blog.imgUrl}"
                             alt="..."
                           />
                         </th>

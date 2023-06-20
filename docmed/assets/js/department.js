@@ -18,7 +18,7 @@ async function getAllBlogs() {
       <div class="col col-sm-12 col-md-6 col-lg-4 p-3 mb-3 mt-3">
                 <div class="department-card">
                   <div class="img">
-                    <img class="w-100" src="${element.photo}" alt="" />
+                    <img class="w-100" src="${element.imgUrl}" alt="" />
                   </div>
                   <div class="card-item">
                     <p class="item-title">${element.blogTitle}</p>

@@ -209,20 +209,20 @@
             <p class="dashboad-title">Add Blog</p>
             <div class="row mb-3 mt-5 dashboad-item">
               <div class="col ps-4 pe-4">
-                <form class="row g-3">
+                <form class="row g-3 form-blog">
                   <div class="col-md-6">
-                    <label for="validationDefault06" class="form-label">Photo</label>
-                    <input type="text" class="form-control" id="validationDefault06" required>
+                    <label for="blog-photo" class="form-label">Photo</label>
+                    <input type="file" class="form-control" id="blog-photo" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefaultBlogTitle" class="form-label">Blog Title</label>
+                    <label for="title-blog" class="form-label">Blog Title</label>
                     <div class="input-group">
-                      <input type="text" class="form-control" id="validationDefaultBlogTitle"  aria-describedby="inputGroupPrepend2" required>
+                      <input type="text" class="form-control" id="title-blog"  aria-describedby="inputGroupPrepend2" required>
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <label for="validationDefault05" class="form-label">Blog Content</label>
-                    <input type="text" class="form-control" id="validationDefault05" required>
+                    <label for="content-blog" class="form-label">Blog Content</label>
+                    <input type="text" class="form-control" id="content-blog" required>
                   </div>
                   <div class="col-12">
                     <div class="form-check">
@@ -253,5 +253,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./assets/js/blog-form.js"></script>
   </body>
 </html>
