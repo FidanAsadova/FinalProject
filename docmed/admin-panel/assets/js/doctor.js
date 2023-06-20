@@ -15,7 +15,7 @@ function drawDoctor(array) {
     docTbody.innerHTML += `
       <tr>
                         <th scope="row"><div class="img d-flex justify-content-center align-items-center">
-                          <img class="rounded w-25" src="${doctor.photo}" alt="..." />
+                          <img class="rounded w-25" src="${doctor.imgUrl}" alt="..." />
                         </div></th>
                         <td>${doctor.firstName}</td>
                         <td>${doctor.lastName}</td>

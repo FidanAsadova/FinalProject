@@ -209,36 +209,32 @@
             <p class="dashboad-title">Add Doctor</p>
             <div class="row mb-3 mt-5 dashboad-item">
               <div class="col ps-4 pe-4">
-                <form class="row g-3">
+                <form class="row g-3 doc-form">
                   <div class="col-md-6">
-                    <label for="validationDefault06" class="form-label">Photo</label>
-                    <input type="text" class="form-control" id="validationDefault06" required>
+                    <label for="photo-doc" class="form-label">Photo</label>
+                    <input type="file" class="form-control" id="photo-doc" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefault01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationDefault01" required>
+                    <label for="doc-name" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="doc-name" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefault02" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="validationDefault02" required>
+                    <label for="doc-lastname" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="doc-lastname" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefault04" class="form-label">Gender</label>
-                    <select class="form-select" id="validationDefault04" required>
-                      <option selected disabled value="">Choose Gender</option>
-                      <option>Female</option>
-                      <option>Male</option>
-                    </select>
+                    <label for="doc-gender" class="form-label">Gender</label>
+                    <input type="text" class="form-control" id="doc-gender" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefaultSpeciality" class="form-label">Speciality</label>
+                    <label for="doc-sp" class="form-label">Speciality</label>
                     <div class="input-group">
-                      <input type="text" class="form-control" id="validationDefaultSpeciality"  aria-describedby="inputGroupPrepend2" required>
+                      <input type="text" class="form-control" id="doc-sp"  aria-describedby="inputGroupPrepend2" required>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <label for="validationDefault03" class="form-label">Number</label>
-                    <input type="number" class="form-control" id="validationDefault03" required>
+                    <label for="doc-num" class="form-label">Number</label>
+                    <input type="number" class="form-control" id="doc-num" required>
                   </div>
                   <div class="col-12">
                     <div class="form-check">
@@ -249,7 +245,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-success" type="submit">Add Doctor</button>
+                    <button id="doc-btn" class="btn btn-success" type="submit">Add Doctor</button>
                   </div>
                 </form>
               </div>
@@ -269,5 +265,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./assets/js/doctor-form.js"></script>
   </body>
 </html>

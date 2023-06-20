@@ -26,7 +26,7 @@ function drawDoctors(array) {
     <div class="col col-sm-12 col-md-6 col-lg-3 mt-1 mb-1 pt-2 pb-2">
               <div class="doctor">
                 <div class="img">
-                  <img class="w-100" src="${element.photo}" alt="doctor" />
+                  <img class="w-100" src="${element.imgUrl}" alt="doctor" />
                 </div>
                 <div class="doctor-about">
                 <p class="doctor-name p-0 m-0">${element.firstName} ${element.lastName}</p>             
