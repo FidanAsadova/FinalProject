@@ -1,5 +1,7 @@
 let BASE_URL_doctor = "http://localhost:8080/doctors";
 let BASE_URL_users = "http://localhost:8080/users";
+let BASE_URL_fav = "http://localhost:8080/fav";
+
 let doctors = document.querySelector(".card-doctor");
 let drSearch = document.querySelector("#search");
 let drLoad = document.querySelector("#load");
@@ -32,8 +34,8 @@ function drawDoctors(array) {
                 <p class="doctor-name p-0 m-0">${element.firstName} ${element.lastName}</p>             
                 <p class="doctor-status p-0 m-0">${element.speciality}</p>
                 <div class="d-flex gap-2 align-items-center">
-                <a href="" ><i class="fa-regular fa-star" style="color: #f5fbff;"></i></a>
-                <a href=""><i class="fa-solid fa-circle-info" style="color: #f5fbff;"></i></a>
+                <a onclick="favDr(${element.id})" href="#" ><i class="fa-regular fa-star" style="color: #f5fbff;"></i></a>
+                
                 </div>
                 </div>
                 
@@ -60,7 +62,15 @@ drSearch.addEventListener("input", async function (e) {
   drawDoctors(searchTitle);
 });
 
-///login
+///fav Doctor
+
+async function favDr(id) {
+  const res = await axios(`${BASE_URL_doctor}/${id}`);
+  const obj = res.data;
+  await axios.post(BASE_URL_fav, obj);
+}
+
+
 
 function loginFormFunc() {
   form.addEventListener("submit", async function () {

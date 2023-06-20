@@ -278,5 +278,16 @@
       "email": "huku@mailinator.com",
       "id": 5
     }
+  ],
+  "fav": [
+    {
+      "imgUrl": "https://preview.colorlib.com/theme/docmed/img/experts/4.png",
+      "firstName": "Dr. Rashid",
+      "lastName": "Alom",
+      "gender": "Male",
+      "speciality": "Dermatology",
+      "number": "0126596578",
+      "id": 1
+    }
   ]
 }
