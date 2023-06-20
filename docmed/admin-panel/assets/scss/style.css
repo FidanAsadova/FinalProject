@@ -166,10 +166,18 @@ header #bottom-header .bottom-header .right-header a:hover {
   background-color: transparent;
   color: navy;
 }
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table tbody th {
+  margin: 0;
+}
+#admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table tbody th img {
+  width: 30px;
+  height: 30px;
+}
 #admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table .border {
   background-color: rgba(0, 0, 128, 0.733);
   color: white;
 }
 #admin-panel .dashboad-structure .col-lg-10 .dashboad-item .col .dashboad-table .table .border th {
   font-weight: 400;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

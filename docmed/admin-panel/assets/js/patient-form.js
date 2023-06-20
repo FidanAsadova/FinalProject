@@ -9,6 +9,7 @@ let numberApp = document.querySelector("#num-app");
 let docApp = document.querySelector("#doc-app");
 let injuryApp = document.querySelector("#injury-app");
 let btnApp = document.querySelector("#btn-app");
+let appTitle = document.querySelector(".patient-user-name");
 let base64;
 
 async function getPatientById() {
@@ -24,6 +25,19 @@ async function getPatientById() {
   photo = data.imgUrl;
 }
 getPatientById()
+
+async function titleApp() {
+  let res = await axios(`${BASE_URL_app}/${id}`);
+  let data = res.data;
+  if (id) {
+    appTitle.innerText = `Patient "${data.name}" Details`;
+    btnApp.innerText = "Edit";
+  } else {
+    appTitle.innerText = "Add Patient";
+  }
+}
+titleApp()
+
 
 function createdApp() {
   formApp.addEventListener("submit", async function (e) {

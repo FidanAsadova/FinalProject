@@ -16,7 +16,7 @@ async function drawBLogData(array) {
     <tr>
                         <th scope="row">
                           <img
-                            class="w-25"
+                            class="rounded ms-1 mt-1 mb-0"
                             src="${blog.imgUrl}"
                             alt="..."
                           />

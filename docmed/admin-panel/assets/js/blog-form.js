@@ -4,18 +4,32 @@ let formBlog = document.querySelector(".form-blog");
 let photo = document.querySelector("#blog-photo");
 let titleBlog = document.querySelector("#title-blog");
 let contentBlog = document.querySelector("#content-blog");
+let pageTitle = document.querySelector(".blog-user-name");
+let btnBlog = document.querySelector(".blog-btn");
 let base64;
 
 async function getBlogById() {
   let res = await axios(`${BASE_URL_Blog}/${id}`);
   let data = res.data;
   console.log(data);
-  
+
   titleBlog.value = data.blogTitle;
   contentBlog.value = data.blogContent;
   photo = data.imgUrl;
 }
 getBlogById();
+
+async function titlePage() {
+  let res = await axios(`${BASE_URL_Blog}/${id}`);
+  let data = res.data;
+  if (id) {
+    pageTitle.innerText = `"${data.blogTitle}" Details`;
+    btnBlog.innerText = "Edit";
+  } else {
+    pageTitle.innerText = "Add Blog";
+  }
+}
+titlePage();
 
 function createdBlog() {
   formBlog.addEventListener("submit", async function (e) {
@@ -31,7 +45,7 @@ function createdBlog() {
     } else {
       await axios.post(BASE_URL_Blog, newBlog);
     }
-    window.location.href="blog.html"
+    window.location.href = "blog.html";
   });
 }
 

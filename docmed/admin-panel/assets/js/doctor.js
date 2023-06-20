@@ -15,7 +15,7 @@ function drawDoctor(array) {
     docTbody.innerHTML += `
       <tr>
                         <th scope="row"><div class="img d-flex justify-content-center align-items-center">
-                          <img class="rounded w-25" src="${doctor.imgUrl}" alt="..." />
+                          <img class="rounded" src="${doctor.imgUrl}" alt="..." />
                         </div></th>
                         <td>${doctor.firstName}</td>
                         <td>${doctor.speciality}</td>
@@ -33,7 +33,7 @@ function drawDoctor(array) {
                                 style="color: darkred"
                               ></i
                             ></a>
-                            <a href="doctor-details.html?id=${doctor.id}"><i class="fa-solid fa-circle-info" style="color: #513a1f;"></i></a>
+                            
                           </div>
                         </td>
                       </tr>

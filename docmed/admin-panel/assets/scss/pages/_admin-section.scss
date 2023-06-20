@@ -152,12 +152,24 @@
               }
             }
             .table {
+              tbody{
+                
+                th{
+                  margin: 0;
+                  img{
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+              }
               .border {
                 background-color: rgba(0, 0, 128, 0.733);
                 color: white;
                 th {
                   font-weight: 400;
+                  text-align: center;
                 }
+                
               }
             }
           }
