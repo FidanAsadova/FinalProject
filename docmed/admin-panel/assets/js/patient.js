@@ -14,7 +14,7 @@ async function drawPatient(array) {
   array.forEach((patient) => {
     patientTbody.innerHTML += `
         <tr>
-                        <th scope="row"><img class="rounded" src="${patient.imgUrl}" alt="..." /></th>
+                        <th scope="row"><img class="rounded-circle" src="${patient.imgUrl}" alt="..." /></th>
                         <td>${patient.name}</td>
                         <td>${patient.email}</td>
                         <td>${patient.date}</td>
